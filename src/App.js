@@ -10,6 +10,7 @@ import { Element } from "react-scroll";
 function App() {
   return (
     <div className="App bg-gradient-to-br from-gray-800 to-gray-900 h-screen">
+      <h1>Chrysanthe is great!</h1>
       <Navbar />
       <Element name="LandingPage">
         <LandingPage />
