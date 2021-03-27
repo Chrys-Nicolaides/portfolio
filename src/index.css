@@ -24,4 +24,22 @@
   .technology-tag {
     @apply pl-6;
   }
+  .card-left-aligned {
+    @apply text-left flex-col w-1/2 mr-10;
+  }
+  .card-title {
+    @apply text-4xl font-bold text-red-300;
+  }
+  .card-subtitle {
+    @apply text-2xl font-bold text-gray-100 mb-8 mt-3;
+  }
+  .card-body {
+    @apply bg-gray-700 text-gray-300 p-5 rounded-md shadow-lg font-body text-sm;
+  }
+  .card-list {
+    @apply flex flex-row justify-end text-gray-500 pt-6 font-body text-sm;
+  }
+  .card-icons {
+    @apply flex flex-row justify-end text-gray-400 pt-6 pr-0;
+  }
 }
