@@ -11,6 +11,20 @@ module.exports = {
       black: colors.black,
       white: colors.white,
     },
+    fontFamily: {
+      display: [
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "-apple-system",
+        "Inter",
+        "Roboto",
+        "Arial",
+        "sans-serif",
+        "Apple Color Emoji",
+      ],
+      heading: ["Roboto Condensed", "Roboto", "Arial"],
+      body: ["Roboto", "Roboto Condensed", "Arial"],
+    },
     fontSize: {
       xs: ["0.75rem", { lineHeight: "1rem" }],
       sm: ["0.875rem", { lineHeight: "1.25rem" }],

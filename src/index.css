@@ -1,3 +1,27 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+@layer base {
+  .button-primary {
+    @apply bg-transparent outline-none focus:outline-none border-2 border-red-300 text-red-300 px-6 py-2.5 rounded-md hover:bg-red-100 hover:bg-opacity-25 focus:ring-red-300 focus:ring-1 font-normal self-center text-center heading-text;
+  }
+  .link-primary {
+    @apply text-gray-400 hover:text-gray-100 focus:text-red-400 cursor-pointer p-4;
+  }
+  .icon-primary {
+    @apply fill-current text-gray-400 hover:text-gray-100 focus:text-red-200 pr-3 transition duration-500 ease-out transform hover:-translate-y-1 hover:scale-y-110;
+  }
+  .display-text {
+    @apply font-display;
+  }
+  .body-text {
+    @apply font-body;
+  }
+  .heading-text {
+    @apply font-heading;
+  }
+  .technology-tag {
+    @apply pl-6;
+  }
+}
