@@ -2,6 +2,7 @@ import React from "react";
 import ProjectOne from "../projects/ProjectOne";
 import ProjectTwo from "../projects/ProjectTwo";
 import ProjectThree from "../projects/ProjectThree";
+import TemplateProject from "../projects/TemplateProject";
 
 const Projects = () => {
   return (
@@ -21,6 +22,7 @@ const Projects = () => {
           Architecture / UI design
         </h2>
       </div>
+      <TemplateProject />
     </div>
   );
 };
