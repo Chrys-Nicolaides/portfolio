@@ -7,7 +7,7 @@ const About = () => {
         <h2 className="text-2xl font-bold text-red-300 font-display pr-4">
           01.
         </h2>
-        <h2 className="text-4xl font-bold text-gray-100  font-display">
+        <h2 className="text-4xl font-bold text-gray-100 font-display">
           About me
         </h2>
       </div>
@@ -46,8 +46,8 @@ const About = () => {
             </div>
           </ul>
         </div>
-        <div className="about-photo flex justify-center self-center w-1/2 bg-gray-700 text-gray-200 ml-5">
-          Santhe's photo
+        <div className="flex justify-center items-center w-1/2 bg-gray-700 text-gray-200 ml-5 rounded-md shadow-md">
+          <h6>Santhe's photo</h6>
         </div>
       </div>
     </div>

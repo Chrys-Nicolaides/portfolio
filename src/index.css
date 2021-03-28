@@ -25,21 +25,45 @@
     @apply pl-6;
   }
   .card-left-aligned {
-    @apply text-left flex-col w-1/2 mr-10;
+    @apply text-left flex-col w-1/2 mr-12;
+  }
+  .card-right-aligned {
+    @apply text-right flex-col w-1/2 flex justify-end;
   }
   .card-title {
     @apply text-4xl font-bold text-red-300;
   }
   .card-subtitle {
-    @apply text-2xl font-bold text-gray-100 mb-8 mt-3;
+    @apply text-2xl font-medium text-gray-100 pb-8 mt-3;
   }
   .card-body {
     @apply bg-gray-700 text-gray-300 p-5 rounded-md shadow-lg font-body text-sm;
   }
   .card-list {
-    @apply flex flex-row justify-end text-gray-500 pt-6 font-body text-sm;
+    @apply flex flex-row justify-start text-gray-500 pt-6 font-body text-sm pl-0;
   }
   .card-icons {
-    @apply flex flex-row justify-end text-gray-400 pt-6 pr-0;
+    @apply flex flex-row justify-start text-gray-400 pt-6;
+  }
+
+  .multiple-images {
+    @apply my-10 flex flex-grow relative items-center;
+  }
+
+  .multiple-images > .image0 {
+    @apply absolute top-0 left-0 h-2/3 w-2/3;
+  }
+
+  .multiple-images > .image1 {
+    @apply absolute right-0 bottom-0 h-2/3 w-2/3;
+  }
+  .multiple-images img {
+    @apply rounded-md shadow-md;
+  }
+  .arch-image {
+    @apply flex flex-col w-3/5 self-center;
+  }
+  .arch-image img {
+    @apply rounded-md shadow-md;
   }
 }

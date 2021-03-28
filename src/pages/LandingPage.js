@@ -4,7 +4,7 @@ const LandingPage = () => {
   return (
     <div className="px-44 py-20">
       <h3 className="greeting text-gray-400 font-body text-sm">
-        Hello, my name is
+        Hello! My name is
       </h3>
       <h1 className="name text-7xl text-gray-100 font-display font-bold py-3">
         Chrys.

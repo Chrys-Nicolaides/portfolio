@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App bg-gradient-to-br from-gray-800 to-gray-900 h-full">
       <Navbar />
-      <div style={{ height: "88px" }} />
+      <div style={{ height: "50px" }} />
       <Element name="LandingPage">
         <LandingPage />
       </Element>

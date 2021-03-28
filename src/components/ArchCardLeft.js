@@ -1,9 +1,8 @@
 import React from "react";
 
-const CardLeft = (props) => {
+const ArchCardLeft = (props) => {
   const tags = props.tags;
   const icons = props.icons;
-  const images = props.images;
 
   const multipleTags = tags.map((tag, key) => (
     <li key={key} className="technology-tag pr-6 pl-0">
@@ -17,12 +16,6 @@ const CardLeft = (props) => {
     </li>
   ));
 
-  const multipleImages = images.map((image, key) => (
-    <div className={"image" + key}>
-      <img className="" src={image} alt={props.imageTitle} />
-    </div>
-  ));
-
   return (
     <div className="flex">
       <div className="card-left-aligned">
@@ -32,9 +25,11 @@ const CardLeft = (props) => {
         <ul className="card-list">{multipleTags}</ul>
         <ul className="card-icons">{multipleIcons}</ul>
       </div>
-      <div className="multiple-images">{multipleImages}</div>
+      <div className="arch-image">
+        <img className="" src={props.image} alt={props.imageTitle} />
+      </div>
     </div>
   );
 };
 
-export default CardLeft;
+export default ArchCardLeft;
