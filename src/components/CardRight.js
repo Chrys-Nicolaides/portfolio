@@ -28,7 +28,7 @@ const CardRight = (props) => {
   ));
 
   return (
-    <div className="flex">
+    <div className="card-right-container">
       <div className="multiple-images">{multipleImages}</div>
       <div className="card-right-aligned">
         <h2 className="card-title">{props.title}</h2>

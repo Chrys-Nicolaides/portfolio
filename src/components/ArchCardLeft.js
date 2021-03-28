@@ -17,7 +17,7 @@ const ArchCardLeft = (props) => {
   ));
 
   return (
-    <div className="flex">
+    <div className="card-left-container">
       <div className="card-left-aligned">
         <h2 className="card-title">{props.title}</h2>
         <h2 className="card-subtitle">{props.subtitle}</h2>
