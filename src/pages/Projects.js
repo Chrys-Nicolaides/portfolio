@@ -2,7 +2,9 @@ import React from "react";
 import ProjectOne from "../projects/ProjectOne";
 import ProjectTwo from "../projects/ProjectTwo";
 import ProjectThree from "../projects/ProjectThree";
-import TemplateProject from "../projects/TemplateProject";
+import ArchProjectOne from "../projects/ArchProjectOne";
+import ArchProjectTwo from "../projects/ArchProjectTwo";
+import ArchProjectThree from "../projects/ArchProjectThree";
 
 const Projects = () => {
   return (
@@ -19,10 +21,12 @@ const Projects = () => {
       <div className="flex items-end pb-6 mb-20">
         <h2 className="text-2xl font-bold text-red-300 pr-4">03.</h2>
         <h2 className="text-4xl font-bold text-gray-100">
-          Architecture / UI design
+          Architecture / UI Design
         </h2>
       </div>
-      <TemplateProject />
+      <ArchProjectOne />
+      <ArchProjectTwo />
+      <ArchProjectThree />
     </div>
   );
 };
