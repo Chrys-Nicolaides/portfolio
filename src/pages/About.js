@@ -1,9 +1,10 @@
 import React from "react";
+import ProfilePicture from "../images/ProfilePicture.png";
 
 const About = () => {
   return (
     <div className="px-44 py-20">
-      <div className="flex items-end pb-6">
+      <div className="flex items-end pb-6 ">
         <h2 className="text-2xl font-bold text-red-300 font-display pr-4">
           01.
         </h2>
@@ -11,8 +12,8 @@ const About = () => {
           About me
         </h2>
       </div>
-      <div className="flex flex-row py-6">
-        <div className="about-text w-1/2 mr-5 text-gray-400 font-body text-sm text-justify">
+      <div className="flex flex-row py-6 md:flex-col">
+        <div className="about-text w-1/2 mr-5 text-gray-400 font-body text-sm text-justify md:w-full">
           <p>
             I am a multi-disciplinary designer with a background in
             Architecture. I graduated with my Master’s Degree in Architecture in
@@ -31,7 +32,7 @@ const About = () => {
           <p className="text-gray-300">
             Technologies I have worked with recently:
           </p>
-          <ul className="flex flex-row mt-3 text-gray-300">
+          <ul className="flex flex-row md:flex-col mt-3 text-gray-300">
             <div className="flex flex-col mr-12">
               <li>JavaScript (ES6+)</li>
               <li>React</li>
@@ -46,8 +47,8 @@ const About = () => {
             </div>
           </ul>
         </div>
-        <div className="flex justify-center items-center w-1/2 bg-gray-700 text-gray-200 ml-5 rounded-md shadow-md">
-          <h6>Santhe's photo</h6>
+        <div className="flex justify-center items-center w-1/2 bg-gray-700 text-gray-200 ml-5 rounded-md shadow-md md:w-full md:m-6 md:mt-10">
+          <img src={ProfilePicture} alt="Profile Picture" />
         </div>
       </div>
     </div>

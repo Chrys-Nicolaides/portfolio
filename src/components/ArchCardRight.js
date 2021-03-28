@@ -17,7 +17,7 @@ const ArchCardLeft = (props) => {
   ));
 
   return (
-    <div className="flex">
+    <div className="card-right-container">
       <div className="arch-image mr-12">
         <img className="" src={props.image} alt={props.imageTitle} />
       </div>

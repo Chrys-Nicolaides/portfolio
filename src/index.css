@@ -24,30 +24,36 @@
   .technology-tag {
     @apply pl-6;
   }
+  .card-left-container {
+    @apply flex md:w-full md:flex-col md:h-full;
+  }
+  .card-right-container {
+    @apply flex md:w-full md:flex-col;
+  }
   .card-left-aligned {
-    @apply text-left flex-col w-1/2 mr-12;
+    @apply text-left flex-col w-1/2 mr-12 md:w-full;
   }
   .card-right-aligned {
-    @apply text-right flex-col w-1/2 flex justify-end;
+    @apply text-right flex-col w-1/2 flex justify-end md:w-full;
   }
   .card-title {
     @apply text-4xl font-bold text-red-300;
   }
   .card-subtitle {
-    @apply text-2xl font-medium text-gray-100 pb-8 mt-3;
+    @apply text-2xl font-medium text-gray-100 pb-8 mt-3 md:text-lg;
   }
   .card-body {
     @apply bg-gray-700 text-gray-300 p-5 rounded-md shadow-lg font-body text-sm;
   }
   .card-list {
-    @apply flex flex-row justify-start text-gray-500 pt-6 font-body text-sm pl-0;
+    @apply flex flex-row justify-start text-gray-500 pt-6 font-body text-sm pl-0 md:text-xs;
   }
   .card-icons {
     @apply flex flex-row justify-start text-gray-400 pt-6;
   }
 
   .multiple-images {
-    @apply my-10 flex flex-grow relative items-center;
+    @apply my-10 flex flex-grow relative items-center md:flex-col md:w-full md:h-1/2;
   }
 
   .multiple-images > .image0 {
@@ -58,12 +64,15 @@
     @apply absolute right-0 bottom-0 h-2/3 w-2/3;
   }
   .multiple-images img {
-    @apply rounded-md shadow-md;
+    @apply rounded-md shadow-md md:order-last;
   }
   .arch-image {
-    @apply flex flex-col w-3/5 self-center;
+    @apply flex flex-col w-3/5 self-center md:w-full md:flex-col md:mx-0 md:order-last md:mt-8;
   }
   .arch-image img {
-    @apply rounded-md shadow-md;
+    @apply rounded-md shadow-md md:mx-0;
+  }
+  .card-right-container > .arch-image {
+    @apply md:mx-0;
   }
 }
