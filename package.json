@@ -4,16 +4,14 @@
   "private": true,
   "dependencies": {
     "@craco/craco": "^5.9.0",
-    "autoprefixer": "^9",
     "flickity": "^2.2.2",
-    "postcss": "^7",
     "react": "^17.0.1",
+    "react-codepen-prefill-embed": "^0.0.2",
     "react-dom": "^17.0.1",
     "react-icons": "^4.1.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "react-scroll": "^1.8.2",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.4",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
@@ -39,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@tailwindcss/jit": "^0.1.17"
   }
 }

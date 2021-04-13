@@ -2,7 +2,7 @@ const colors = require("tailwindcss/colors");
 
 module.exports = {
   purge: ["./src/**/*.js", "./public/index.html"],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "class",
   theme: {
     colors: {
       transparent: "transparent",
@@ -41,11 +41,20 @@ module.exports = {
       "9xl": ["8rem", { lineHeight: "1" }],
       "10xl": ["13rem", { lineHeight: "1" }],
     },
+    extend: {
+      colors: {
+        red: {
+          950: "#551414",
+        },
+      },
+    },
   },
   variants: {
     extend: {
       transform: ["hover", "focus"],
       translate: ["hover", "focus"],
+      textColor: ["active"],
+      backgroundColor: ["hover", "focus", "active"],
     },
   },
   plugins: [],
