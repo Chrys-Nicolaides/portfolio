@@ -20,7 +20,7 @@ function App() {
     if (darkTheme) {
       document.body.classList.add("dark");
     }
-  }, []);
+  }, [darkTheme]);
 
   const themeToggle = () => {
     if (darkTheme) {
