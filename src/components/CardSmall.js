@@ -30,7 +30,7 @@ const CardSmall = (props) => {
   // ));
 
   return (
-    <div className="sm:w-full bg-white dark:bg-gray-800 rounded-md shadow-md p-8 relative ">
+    <div className="sm:w-full bg-white dark:bg-gray-800 rounded-md shadow-md p-8 relative mb-44">
       <ul className="flex flex-wrap sm:flex-nowrap sm:visible invisible">
         {multipleTags}
       </ul>
