@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { HiArrowRight } from "react-icons/hi";
+import Card from "../components/Card";
+import CarouselProject from "../projects/CarouselProject";
 
 const CardLarge = (props) => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-md shadow-md relative w-5/6 mb-44 sm:mx-0 mx-8">
-      <div className="overflow-hidden bg-gray-100 dark:bg-gray-700 dark:bg-opacity-0 h-96">
+    <Card
+      // fullWidth={true}
+      additionalClasses={"relative  mb-44 sm:mx-0 mx-8 w-2/3 h-1/3 "}
+    >
+      {/* <div className="bg-white dark:bg-gray-800 rounded-md shadow-md relative w-5/6 mb-44 sm:mx-0 mx-8"> */}
+      {showModal ? <CarouselProject setShowModal={setShowModal} /> : ""}
+      <div className="overflow-hidden bg-gray-100 dark:bg-gray-700 dark:bg-opacity-0 h-1/3">
         <img
           src={props.image}
           alt={props.imageTitle}
@@ -25,14 +34,19 @@ const CardLarge = (props) => {
             {props.subtitle}
           </h2>
         </div>
-        <div className="flex justify-end content-center w-full">
-          <button className="flex items-center button-primary px-5 mr-8 h-14 text-red-950 absolute rounded-md text-lg uppercase tracking-tight font-semibold">
+        <div className="flex justify-end content-center w-full items-end">
+          <button
+            className="flex items-center button-primary px-5 mr-8 h-14 text-red-950 absolute rounded-md text-lg uppercase tracking-tight font-semibold"
+            // onClick={() => setShowModal(!showModal)}
+            onClick={props.handleClick}
+          >
             {props.buttonText}
             <HiArrowRight className="ml-8" />
           </button>
         </div>
       </div>
-    </div>
+      {/* </div> */}
+    </Card>
   );
 };
 

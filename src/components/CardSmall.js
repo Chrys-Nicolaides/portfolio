@@ -55,10 +55,10 @@ const CardSmall = (props) => {
         {props.subtitle}
       </h2>
 
-      <p className="text-gray-400 dark:text-gray-500 pt-8 pb-4 text-sm font-medium">
+      {/* <p className="text-gray-400 dark:text-gray-500 pt-8 pb-4 text-sm font-medium">
         {props.body}
-      </p>
-      <ul className="card-icons pb-24 mr-6 sm:visible invisible">
+      </p> */}
+      <ul className="card-icons pt-8 pb-24 mr-6 sm:visible invisible">
         {multipleIcons}
       </ul>
       <button className="button-primary w-full h-14 text-red-950 absolute bottom-0 left-0 rounded-b-md rounded-t-none text-lg uppercase tracking-tight font-semibold ">
