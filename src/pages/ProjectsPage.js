@@ -4,7 +4,9 @@ import { HiOutlineSparkles } from "react-icons/hi";
 import Projects from "../projects/Projects";
 import FeatureProject from "../projects/FeatureProject";
 import Snorlax from "../pens/Snorlax";
+import Fox from "../pens/Fox";
 import ArchProjects from "../projects/ArchProjects";
+// import Carousel from "../components/Carousel";
 
 const ProjectsPage = ({ darkTheme }) => {
   return (
@@ -46,12 +48,26 @@ const ProjectsPage = ({ darkTheme }) => {
         </div>
 
         <h2 className="sm:text-5xl text-xl font-bold text-gray-600 dark:text-gray-200 font-display ml-4">
-          CodePen aimations
+          CodePen Animations
         </h2>
       </div>
-      <div className="w-1/2">
-        <Snorlax darkTheme={darkTheme} />
+      <div className="flex flex-row gap-x-8 w-full ">
+        <div className="w-1/2">
+          <h3 className="sm:text-xl text-lg font-bold text-gray-600 dark:text-gray-200 font-display mb-4">
+            Spirit animal
+          </h3>
+          <Snorlax darkTheme={darkTheme} />
+        </div>
+        <div className="w-1/2">
+          <h3 className="sm:text-xl text-lg font-bold text-gray-600 dark:text-gray-200 font-display mb-4">
+            What does the fox say?
+          </h3>
+          {/* <Fox darkTheme={darkTheme} />
+           */}
+          <Fox darkTheme={darkTheme} />
+        </div>
       </div>
+      {/* <Carousel darkTheme={darkTheme} /> */}
     </div>
   );
 };

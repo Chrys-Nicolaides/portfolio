@@ -54,7 +54,7 @@ const Navbar = ({ darkTheme, themeToggle }) => {
           >
             Projects
           </Link>
-          <Link
+          {/* <Link
             className="link-primary"
             to="Contact"
             smooth={true}
@@ -62,7 +62,7 @@ const Navbar = ({ darkTheme, themeToggle }) => {
             duration={500}
           >
             Contact
-          </Link>
+          </Link> */}
           <Link
             className="button-primary text-red-950 dark:text-red-950 px-3 py-2 md:px-7 md:py-3.5 md:mx-5 xl:mr-12 xl:ml-8 sm:text-xs md:text-xl xl:text-2xl xl:px-8 xl:py-4 font-bold cursor-pointer hover:bg-red-300 hover:bg-opacity-80 active:bg-opacity-90 active:bg-red-400 dark:hover:bg-red-100 dark:active:bg-red-300 "
             to=""

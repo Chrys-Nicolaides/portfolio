@@ -75,4 +75,11 @@
   .card-right-container > .arch-image {
     @apply md:mx-0;
   }
+  div.swiper-button-next,
+  div.swiper-button-prev {
+    @apply text-gray-900 hover:scale-125 scale-75 transform bg-white hover:bg-opacity-90 bg-opacity-80 px-6 py-7 rounded focus:outline-none outline-none;
+  }
+  .swiper-container .swiper-pagination-bullet-active {
+    @apply bg-red-300;
+  }
 }

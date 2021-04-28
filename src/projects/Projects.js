@@ -22,9 +22,9 @@ const Projects = ({ darkTheme }) => {
         number={"02"}
         title={"Design Systems"}
         subtitle={"with React & Styled Components"}
-        body={
-          "Design systems include a series of reusable UI Components to develop new experiences."
-        }
+        // body={
+        //   "Design systems include a series of reusable UI Components to develop new experiences."
+        // }
         icons={[<AiFillGithub />, <AiOutlineDribbble />, <AiOutlineCodepen />]}
         buttonText={"View project"}
       />
@@ -36,9 +36,9 @@ const Projects = ({ darkTheme }) => {
         number={"03"}
         title={"Ergo Timer"}
         subtitle={"with React & CSS Animation"}
-        body={
-          "Design systems include a series of reusable UI Components to develop new experiences."
-        }
+        // body={
+        //   "Design systems include a series of reusable UI Components to develop new experiences."
+        // }
         icons={[<AiFillGithub />, <AiOutlineDribbble />, <AiOutlineCodepen />]}
         buttonText={"View project"}
       />
@@ -49,9 +49,9 @@ const Projects = ({ darkTheme }) => {
         number={"04"}
         title={"Media Gallery"}
         subtitle={"with React & Tailwind CSS"}
-        body={
-          "Design systems include a series of reusable UI Components to develop new experiences."
-        }
+        // body={
+        //   "Design systems include a series of reusable UI Components to develop new experiences."
+        // }
         icons={[<AiFillGithub />, <AiOutlineDribbble />, <AiOutlineCodepen />]}
         buttonText={"View project"}
       />

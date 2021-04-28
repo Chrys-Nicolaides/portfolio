@@ -31,14 +31,14 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div>
+      {/* <div>
         <a
           className="link-primary xl:text-base md:text-sm pr-0 text-gray-500 dark:text-gray-400 border-none hover:border-none font-medium "
           href="https://www.google.com/"
         >
           nicolaides.chrysanthe@gmail.com
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };

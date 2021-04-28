@@ -12,7 +12,7 @@ const CodepenEmbedded = ({ darkTheme }) => {
   return (
     <Codepen
       defaultTab="result"
-      hash="KKVxmbe"
+      hash="LYxmYRz"
       user="Chrys-Nicolaides"
       loader={() => <div>Loading...</div>}
       themeId={darkTheme ? "dark" : "light"}
