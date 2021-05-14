@@ -8,15 +8,18 @@ import SwiperCore, {
   Lazy,
 } from "swiper";
 import "swiper/swiper-bundle.css";
-import TswaluCover from "../images/TswaluCover.png";
-import TswaluMainBedroom from "../images/TswaluMainBedroom.png";
-import TswaluMainBathroom from "../images/TswaluMainBathroom.png";
-import TswaluFamilyBedroom from "../images/TswaluFamilyBedroom.png";
-import TswaluPoolDeck from "../images/TswaluPoolDeck.png";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Lazy]);
 
-const Carousel = () => {
+const Carousel = (props) => {
+  const { images } = props;
+
+  const carouselImages = images?.map((image, alt) => (
+    <SwiperSlide>
+      <img alt={alt} src={image} />
+    </SwiperSlide>
+  ));
+
   return (
     <Swiper
       autoHeight={true}
@@ -31,21 +34,7 @@ const Carousel = () => {
       onSwiper={(swiper) => console.log(swiper)}
       className="rounded-md "
     >
-      <SwiperSlide>
-        <img alt="game lodge" src={TswaluCover} />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img alt="game lodge" src={TswaluMainBedroom} />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img alt="game lodge" src={TswaluMainBathroom} />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img alt="game lodge" src={TswaluFamilyBedroom} />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img alt="game lodge" src={TswaluPoolDeck} />
-      </SwiperSlide>
+      {carouselImages}
     </Swiper>
   );
 };
