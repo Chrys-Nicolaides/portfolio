@@ -9000,11 +9000,6 @@ react-codepen-embed@^1.0.2:
   dependencies:
     prop-types "^15.5.0"
 
-react-codepen-prefill-embed@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/react-codepen-prefill-embed/-/react-codepen-prefill-embed-0.0.2.tgz#da7cf5a8ee4f7175b48d9755eb095c77cf60ac4c"
-  integrity sha512-gMXxxyLO5vW/IP7lPro3/T25eK5HNoNl7wjau29+Yuq3wGdpVIaUPkzNI0D/oHQ2i8ezL/pIyWNh7crXZWvXNg==
-
 react-dev-utils@^11.0.1:
   version "11.0.4"
   resolved "https://registry.npmjs.org/react-dev-utils/-/react-dev-utils-11.0.4.tgz"

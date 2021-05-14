@@ -1,16 +1,19 @@
 import React from "react";
-import CardLarge from "../components/CardLarge";
-import DesignSystemsLight from "../images/DesignSystemsLight.png";
+// import { Link, useHistory } from "react-router-dom";
 
-const FeatureProject = () => {
+import CardFeature from "../components/CardFeature";
+import DashboardLight from "../images/DashboardLight.png";
+import DashboardDark from "../images/DashboardDark.png";
+
+const FeatureProject = ({ darkTheme }) => {
   return (
     <div>
-      <CardLarge
-        image={[DesignSystemsLight]}
+      <CardFeature
+        image={darkTheme ? DashboardDark : DashboardLight}
         number={"01"}
-        title={"Financer"}
+        title={"Finanzer"}
         subtitle={"Finance management system with React & Tailwind CSS"}
-        buttonText={"View project"}
+        link={"/featureprojectpage"}
       />
     </div>
   );
