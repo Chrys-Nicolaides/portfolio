@@ -2,13 +2,6 @@ import React from "react";
 import Codepen from "react-codepen-embed";
 
 const CodepenEmbedded = ({ darkTheme }) => {
-  const Loading = (props) => {
-    if (props.error) {
-      return <div>Error</div>;
-    }
-    return <div>Loading...</div>;
-  };
-
   return (
     <Codepen
       defaultTab="result"
@@ -16,8 +9,8 @@ const CodepenEmbedded = ({ darkTheme }) => {
       user="Chrys-Nicolaides"
       loader={() => <div>Loading...</div>}
       themeId={darkTheme ? "dark" : "light"}
-      preview="false"
-      height="400"
+      preview={false}
+      height={400}
     />
   );
 };
