@@ -6,7 +6,7 @@ import { RiMoonLine, RiSunLine } from "react-icons/ri";
 
 const Navbar = ({ darkTheme, themeToggle }) => {
   return (
-    <div className="navbar font-heading bg-white dark:bg-gray-800 w-full fixed shadow flex items-center justify-between text-gray-600 dark:text-gray-300 xl:py-6 md:py-4 z-10">
+    <nav className="navbar font-heading bg-white dark:bg-gray-850 w-full fixed shadow flex items-center justify-between text-gray-600 dark:text-gray-300 xl:py-6 md:py-4 z-10">
       <div className="navbar-nav md:px-8 xl:px-12 flex">
         <div className="nav-logo h-14 w-14 bg-opacity-70 bg-gray-200 dark:bg-gray-700 dark:text-gray-400 text-gray-400 rounded-md shadow font-semibold text-3xl flex justify-center items-center pb-0.5 pl-0.5">
           cn.
@@ -36,6 +36,16 @@ const Navbar = ({ darkTheme, themeToggle }) => {
             {/* {LandingPage ? "" : "Home"} */}
             Home
           </Link>
+
+          <Link
+            className="link-primary"
+            to="Projects"
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            Projects
+          </Link>
           <Link
             className="link-primary"
             to="About"
@@ -47,22 +57,13 @@ const Navbar = ({ darkTheme, themeToggle }) => {
           </Link>
           <Link
             className="link-primary"
-            to="Projects"
-            smooth={true}
-            offset={-50}
-            duration={500}
-          >
-            Projects
-          </Link>
-          {/* <Link
-            className="link-primary"
             to="Contact"
             smooth={true}
             offset={-50}
             duration={500}
           >
             Contact
-          </Link> */}
+          </Link>
           <Link
             className="button-primary text-red-950 dark:text-red-950 px-3 py-2 md:px-7 md:py-3.5 md:mx-5 xl:mr-12 xl:ml-8 sm:text-xs md:text-xl xl:text-2xl xl:px-8 xl:py-4 font-bold cursor-pointer hover:bg-red-300 hover:bg-opacity-80 active:bg-opacity-90 active:bg-red-400 dark:hover:bg-red-100 dark:active:bg-red-300 "
             to=""
@@ -71,7 +72,7 @@ const Navbar = ({ darkTheme, themeToggle }) => {
           </Link>
         </ul>
       </div>
-    </div>
+    </nav>
   );
 };
 

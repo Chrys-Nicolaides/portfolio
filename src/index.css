@@ -10,7 +10,7 @@
     @apply text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-50 active:text-red-400 dark:active:text-red-200 cursor-pointer md:mx-4 md:my-3 md:text-base xl:text-xl text-xs xl:mx-5 xl:pb-2.5 sm:font-normal font-medium hover:border-red-300 dark:hover:border-red-200 border-b-4 border-transparent;
   }
   .icon-primary {
-    @apply text-gray-500 hover:text-gray-700  dark:text-gray-400 dark:hover:text-gray-100 active:text-red-400 dark:active:text-red-300 sm:pr-5 md:pr-3 transition duration-500 ease-out transform hover:-translate-y-1 md:hover:scale-110 md:scale-75 xl:scale-125 xl:hover:scale-150;
+    @apply text-gray-500 hover:text-gray-700  dark:text-gray-400 dark:hover:text-gray-100 active:text-red-400 dark:active:text-red-300 sm:pr-4 md:pr-6 transition duration-500 ease-out transform hover:-translate-y-1 md:hover:scale-110 md:scale-75 xl:scale-125 xl:hover:scale-150;
   }
   .display-text {
     @apply font-display;
@@ -42,30 +42,12 @@
   .card-subtitle {
     @apply lg:text-2xl font-medium text-gray-100 pb-8 lg:mt-3 md:text-lg;
   }
-  /* .card-body {
-    @apply bg-gray-700 text-gray-300 p-5 rounded-md shadow-lg font-body text-sm;
-  } */
   .card-list {
     @apply flex lg:flex-row lg:justify-start text-gray-500 lg:pt-6 font-body text-sm lg:pl-0 md:text-xs;
   }
   .card-icons {
     @apply flex flex-row justify-start text-gray-400 pt-6;
   }
-
-  /* .multiple-images {
-    @apply lg:my-10 flex lg:flex-grow lg:w-1/2 relative lg:items-center md:flex-col md:w-full md:h-1/2;
-  }
-
-  .multiple-images > .image0 {
-    @apply lg:absolute lg:top-0 lg:left-0 lg:h-2/3 lg:w-2/3 md:mb-4 md:mt-8;
-  }
-
-  .multiple-images > .image1 {
-    @apply lg:absolute lg:right-0 lg:bottom-0 lg:h-2/3 lg:w-2/3 md:my-4;
-  }
-  .multiple-images img {
-    @apply rounded-md shadow-md md:order-last;
-  } */
   .arch-image {
     @apply flex lg:flex-col lg:w-3/5 self-center md:w-full md:flex-col mx-0 md:order-last mt-8;
   }
@@ -77,9 +59,51 @@
   }
   div.swiper-button-next,
   div.swiper-button-prev {
-    @apply text-gray-900 hover:scale-125 scale-75 transform bg-white hover:bg-opacity-90 bg-opacity-80 px-6 py-7 rounded focus:outline-none outline-none;
+    @apply text-gray-900 hover:scale-125 scale-75 transform px-6 py-7 rounded focus:outline-none outline-none stroke-2;
   }
   .swiper-container .swiper-pagination-bullet-active {
     @apply bg-red-300;
+  }
+  .carousel-icon-circle {
+    @apply bg-gray-200 dark:bg-gray-700 rounded-full h-14 w-14 flex justify-center items-center fill-current content-center mr-5;
+  }
+  .carousel-close-icon {
+    @apply absolute top-0 right-0 cursor-pointer stroke-current stroke-2 text-gray-400 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-100 w-8 h-8 self-end mt-6 mr-6;
+  }
+  .carousel-details-button {
+    @apply focus:outline-none underline text-gray-600 text-lg font-bold pb-8 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-300;
+  }
+  .sections-title {
+    @apply sm:text-5xl text-xl font-bold text-gray-600 dark:text-gray-200 font-display ml-4;
+  }
+  .sections-subtitle {
+    @apply sm:text-xl text-lg font-bold text-gray-600 dark:text-gray-200 font-display mb-4;
+  }
+  .icon-container {
+    @apply flex items-end sm:pb-24 pb-10 sm:mx-0 mx-8;
+  }
+  .icon-circle {
+    @apply bg-gray-300 dark:bg-gray-700 bg-opacity-60 rounded-full sm:h-12 sm:w-12 h-7 w-7 flex justify-center items-center;
+  }
+  .icon {
+    @apply text-gray-400 dark:text-gray-400  sm:h-6 sm:w-6 h-4 w-4;
+  }
+  .cs-page-breaks {
+    @apply xl:py-36 sm:px-4 sm:py-8 sm:mx-0 mx-8 mb-24;
+  }
+  .cs-page-sections {
+    @apply bg-gray-50 dark:bg-gray-800 w-screen sm:py-36 py-10 md:px-44 px-10 sm:px-0;
+  }
+  .cs-title-dash {
+    @apply bg-indigo-500 dark:bg-indigo-300 w-5 h-0.5 items-center mb-4;
+  }
+  .cs-title {
+    @apply pl-2 text-indigo-500 dark:text-indigo-300 sm:text-2xl text-lg font-bold font-display mb-4;
+  }
+  .cs-subtitle {
+    @apply ml-0 mb-24 pt-8 sm:w-11/12 w-full text-3xl sm:text-6xl font-bold font-display text-gray-600 dark:text-gray-300;
+  }
+  .cs-body {
+    @apply sm:text-gray-500 text-gray-600 font-normal font-body sm:text-lg text-sm sm:w-3/4 w-full dark:text-gray-400 pt-4;
   }
 }

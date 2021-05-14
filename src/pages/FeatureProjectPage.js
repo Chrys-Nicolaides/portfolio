@@ -145,7 +145,7 @@ const FeatureProjectPage = ({ darkTheme }) => {
               className="place-self-center"
             />
           </div>
-          <div className="flex items-center sm:py-16 pt-16 pb-6">
+          <div className="flex items-center sm:pt-32 sm:pb-8 pt-16 pb-6">
             <div className="cs-title-dash"></div>
             <h3 className="cs-title">User Journey</h3>
           </div>
