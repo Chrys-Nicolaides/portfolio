@@ -18,23 +18,19 @@ const CardSmall = (props) => {
         key={key}
         className="icon-primary text-gray-500 dark:text-gray-400 sm:pr-0 md:pr-0 transform hover:-translate-y-0 "
       >
-        {icon}
+        <a href={props.link} target="_blank" rel="noopener noreferrer">
+          {icon}
+        </a>
       </li>
     </div>
   ));
 
-  // const multipleImages = images?.map((image, key) => (
-  //   <div className={"image" + key}>
-  //     <img className="" src={image} alt={props.imageTitle} key={key} />
-  //   </div>
-  // ));
-
   return (
-    <div className="sm:w-full bg-white dark:bg-gray-800 rounded-md shadow-md p-8 relative mb-44">
+    <div className="sm:w-full bg-white dark:bg-gray-800 rounded-md shadow-md p-8 relative sm:mb-44 mb-32 transition transform duration-500 hover:scale-105 ease-out">
       <ul className="flex flex-wrap sm:flex-nowrap sm:visible invisible">
         {multipleTags}
       </ul>
-      <div className="overflow-hidden h-64 absolute left-0 right-0 sm:top-auto top-0">
+      <div className="overflow-hidden sm:h-64 h-48 absolute left-0 right-0 sm:top-auto top-0">
         <img
           src={props.image}
           alt={props.imageTitle}
@@ -48,17 +44,13 @@ const CardSmall = (props) => {
           {props.number}
         </div>
       </div>
-      <h3 className="text-gray-700 dark:text-gray-200 text-3xl font-bold pb-3 sm:mt-80 mt-44">
+      <h3 className="text-gray-700 dark:text-gray-200 2xl:text-3xl text-xl font-bold pb-3 sm:mt-80 mt-40">
         {props.title}
       </h3>
-      <h2 className="text-gray-500 dark:text-gray-400 text-xl font-medium tracking-tight">
+      <h2 className="text-gray-500 dark:text-gray-400 text-base font-medium tracking-tight">
         {props.subtitle}
       </h2>
-
-      {/* <p className="text-gray-400 dark:text-gray-500 pt-8 pb-4 text-sm font-medium">
-        {props.body}
-      </p> */}
-      <ul className="card-icons pt-8 pb-24 mr-6 sm:visible invisible">
+      <ul className="card-icons pt-8 sm:pb-24 pb-6 mr-6 sm:visible invisible">
         {multipleIcons}
       </ul>
       <button className="button-primary w-full h-14 text-red-950 absolute bottom-0 left-0 rounded-b-md rounded-t-none text-lg uppercase tracking-tight font-semibold ">
