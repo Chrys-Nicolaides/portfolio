@@ -1,10 +1,9 @@
-import React, { useState } from "react";
-import { HiArrowRight } from "react-icons/hi";
+import React from "react";
 import Card from "../components/Card";
 import { Link as RouterLink } from "react-router-dom";
 
 const CardFeature = (props) => {
-  const [showModal, setShowModal] = useState(false);
+  // const [showModal, setShowModal] = useState(false);
 
   return (
     <Card
