@@ -1,98 +1,88 @@
-import React, { useState } from "react";
-import { IoClose } from "react-icons/io5";
-import Card from "../components/Card";
-import Modal from "../components/Modal";
+import React from "react";
+import { Link } from "react-router-dom";
+
+import { HiArrowLeft } from "react-icons/hi";
 import Carousel from "../components/Carousel";
 import Header from "../components/Header";
 import { ReactComponent as ArchLogo } from "../images/ArchLogo.svg";
 import { ReactComponent as Architects } from "../images/Architects.svg";
 import { ReactComponent as ProjectRole } from "../images/ProjectRole.svg";
-import TswaluCover from "../images/TswaluCover.png";
-import TswaluMainBedroom from "../images/TswaluMainBedroom.png";
-import TswaluMainBathroom from "../images/TswaluMainBathroom.png";
-import TswaluFamilyBedroom from "../images/TswaluFamilyBedroom.png";
-import TswaluPoolDeck from "../images/TswaluPoolDeck.png";
+import TswaluCover from "../images/TswaluCover.webp";
+import TswaluMainBedroom from "../images/TswaluMainBedroom.webp";
+import TswaluMainBathroom from "../images/TswaluMainBathroom.webp";
+import TswaluFamilyBedroom from "../images/TswaluFamilyBedroom.webp";
+import TswaluPoolDeck from "../images/TswaluPoolDeck.webp";
 
-const CarouselProjectTwo = ({ setShowModal }) => {
-  const [showDetails, setShowDetails] = useState(false);
+const CarouselProjectTwo = () => {
   return (
-    <Modal className="">
-      <Card additionalClasses={"bg-gray-50 py-14 px-24 my-48 relative"}>
-        <div className="carousel-card max-w-lg xl:max-w-3xl mx-auto">
-          <IoClose
-            onClick={() => setShowModal(false)}
-            strokeWidth={6}
-            className="carousel-close-icon"
+    <div>
+      <Link
+        className="sm:flex hidden w-40 h-16 items-center pt-24 sm:pb-0.5 pb-4 pl-12 text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200"
+        to="/"
+      >
+        <HiArrowLeft />
+        <h5 className="items-center pl-2.5 text-base">Back</h5>
+      </Link>
+      <div className="carousel-card xl:max-w-5xl mx-auto sm:py-28 sm:px-28 py-16 px-8 bg-gray-50 dark:bg-gray-800 max-w-3xl flex flex-col">
+        <Header
+          number={"01"}
+          title={"Tswalu"}
+          subtitle={"Kalahari Lodge refurbishment project"}
+          tags={["figma", "ui design", "architecture", "interior design"]}
+        />
+        <div className="pt-10 lg:pt-20">
+          <Carousel
+            images={[
+              TswaluCover,
+              TswaluMainBedroom,
+              TswaluMainBathroom,
+              TswaluFamilyBedroom,
+              TswaluPoolDeck,
+            ]}
           />
-          <Header
-            number={"01"}
-            title={"Tswalu"}
-            subtitle={"Kalahari Lodge refurbishment project"}
-            tags={["figma", "ui design", "architecture", "interior design"]}
-          />
-          <div className="pt-10 lg:pt-20">
-            <Carousel
-              images={[
-                TswaluCover,
-                TswaluMainBedroom,
-                TswaluMainBathroom,
-                TswaluFamilyBedroom,
-                TswaluPoolDeck,
-              ]}
-            />
-          </div>
-          <div className="flex justify-center pt-12 flex-col">
-            <button
-              onClick={() => setShowDetails(!showDetails)}
-              className="carousel-details-button"
-            >
-              {showDetails ? "Hide details" : "View details"}
-            </button>
-            {showDetails ? (
-              <div className="flex flex-col gap-y-12 justify-center text-gray-500 dark:text-gray-400 w-full pb-2 ml-4">
-                <div className="flex ">
-                  <div className="carousel-icon-circle">
-                    <ArchLogo className="" />
-                  </div>
-                  <div>
-                    <h5 className="font-bold">Project</h5>
-                    <h6>
-                      Complete refurbishment of existing game lodge situated in
-                      the Kalahari
-                    </h6>
-                  </div>
-                </div>
-                <div className="flex">
-                  <div className="carousel-icon-circle">
-                    <Architects />
-                  </div>
-                  <div>
-                    <h5 className="font-bold">Architects</h5>
-                    <h6>Savile Row Tailored Environments</h6>
-                  </div>
-                </div>
-                <div className="flex">
-                  <div className="carousel-icon-circle">
-                    <ProjectRole />
-                  </div>
-                  <div>
-                    <h5 className="font-bold">Role on Project</h5>
-                    <h6 className="">Technical documentation</h6>
-                    {/* <h6 className="w-2/3">
-                      Technical documentation of guest chalets and public
-                      facilities on the site, including both interior and
-                      architectural related detailing
-                    </h6> */}
-                  </div>
-                </div>
+        </div>
+        <div className="flex justify-center sm:pt-12 pt-16 flex-col">
+          <h3 className="text-center text-lg text-gray-500 dark:text-gray-400 font-bold sm:pb-8 pb-12">
+            Project details
+          </h3>
+          <div className="flex flex-col gap-y-12 justify-center text-gray-500 dark:text-gray-400 w-full h-auto">
+            <div className="flex ">
+              <div className="carousel-icon-circle">
+                <ArchLogo className="" />
               </div>
-            ) : (
-              ""
-            )}
+              <div>
+                <h5 className="font-bold">Project</h5>
+                <h6>
+                  Complete refurbishment of existing game lodge situated in the
+                  Kalahari
+                </h6>
+              </div>
+            </div>
+            <div className="flex">
+              <div className="carousel-icon-circle">
+                <Architects />
+              </div>
+              <div>
+                <h5 className="font-bold">Architects</h5>
+                <h6>Savile Row Tailored Environments</h6>
+              </div>
+            </div>
+            <div className="flex">
+              <div className="carousel-icon-circle">
+                <ProjectRole />
+              </div>
+              <div>
+                <h5 className="font-bold">Role on Project</h5>
+                <h6 className="sm:pb-8 pb-12">
+                  Architectural co-ordination & planning, construction drawings
+                  & technical documentation, interior detailing
+                </h6>
+              </div>
+            </div>
           </div>
         </div>
-      </Card>
-    </Modal>
+      </div>
+    </div>
   );
 };
 

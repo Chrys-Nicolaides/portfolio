@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 
 import { RiMoonLine, RiSunLine } from "react-icons/ri";
+import { Switch, Route, Link as RouterLink } from "react-router-dom";
 // import LandingPage from "../pages/LandingPage";
 
 const Navbar = ({ darkTheme, themeToggle }) => {
@@ -23,53 +24,68 @@ const Navbar = ({ darkTheme, themeToggle }) => {
           )}
         </button>
       </div>
-      <div className="navbar-links flex justify-end sm:mx-4">
+      <div className="navbar-links flex justify-end sm:mx-6">
         <ul className="nav-links ">
-          <Link
-            className="link-primary active:text-red-300 dark:active:text-red-200"
-            to="LandingPage"
-            smooth={true}
-            offset={-50}
-            duration={500}
-          >
-            {/* {<LandingPage /> ? "" : "Home"} */}
-            {/* {LandingPage ? "" : "Home"} */}
-            Home
-          </Link>
+          <Switch>
+            <Route exact path="/">
+              <Link
+                className="link-primary active:text-red-300 dark:active:text-red-200"
+                to="LandingPage"
+                smooth={true}
+                offset={-50}
+                duration={500}
+              >
+                Home
+              </Link>
 
-          <Link
-            className="link-primary"
-            to="Projects"
-            smooth={true}
-            offset={-50}
-            duration={500}
-          >
-            Projects
-          </Link>
-          <Link
-            className="link-primary"
-            to="About"
-            smooth={true}
-            offset={-50}
-            duration={500}
-          >
-            About
-          </Link>
-          <Link
-            className="link-primary"
-            to="Contact"
-            smooth={true}
-            offset={-50}
-            duration={500}
-          >
-            Contact
-          </Link>
-          <Link
-            className="button-primary text-red-950 dark:text-red-950 px-3 py-2 md:px-7 md:py-3.5 md:mx-5 xl:mr-12 xl:ml-8 sm:text-xs md:text-xl xl:text-2xl xl:px-8 xl:py-4 font-bold cursor-pointer hover:bg-red-300 hover:bg-opacity-80 active:bg-opacity-90 active:bg-red-400 dark:hover:bg-red-100 dark:active:bg-red-300 "
-            to=""
-          >
-            Resume
-          </Link>
+              <Link
+                className="link-primary"
+                to="Projects"
+                smooth={true}
+                offset={-50}
+                duration={500}
+              >
+                Projects
+              </Link>
+              <Link
+                className="link-primary"
+                to="About"
+                smooth={true}
+                offset={-50}
+                duration={500}
+              >
+                About
+              </Link>
+              <Link
+                className="link-primary"
+                to="Contact"
+                smooth={true}
+                offset={-50}
+                duration={500}
+              >
+                Contact
+              </Link>
+              <a
+                className="button-primary text-red-950 dark:text-red-950 px-3 py-2 md:px-7 md:py-3.5 md:mx-5 xl:mr-12 xl:ml-8 sm:text-xs md:text-xl xl:text-2xl xl:px-8 xl:py-4 font-bold cursor-pointer hover:bg-red-300 hover:bg-opacity-80 active:bg-opacity-90 active:bg-red-400 dark:hover:bg-red-100 dark:active:bg-red-300 "
+                href="/resume.pdf"
+                download
+              >
+                Resume
+              </a>
+            </Route>
+            <Route path="/*">
+              <RouterLink className="link-primary" to="/">
+                Home
+              </RouterLink>
+              <a
+                className="button-primary text-red-950 dark:text-red-950 px-3 py-2 md:px-7 md:py-3.5 md:mx-5 xl:mr-12 xl:ml-8 sm:text-xs md:text-xl xl:text-2xl xl:px-8 xl:py-4 font-bold cursor-pointer hover:bg-red-300 hover:bg-opacity-80 active:bg-opacity-90 active:bg-red-400 dark:hover:bg-red-100 dark:active:bg-red-300 "
+                href="/resume.pdf"
+                download
+              >
+                Resume
+              </a>
+            </Route>
+          </Switch>
         </ul>
       </div>
     </nav>

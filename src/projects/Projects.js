@@ -2,15 +2,15 @@ import React from "react";
 import CardSmall from "../components/CardSmall";
 import {
   AiFillGithub,
-  AiOutlineDribbble,
-  AiOutlineCodepen,
+  // AiOutlineDribbble,
+  // AiOutlineCodepen,
 } from "react-icons/ai";
-import DesignSystemsLight from "../images/DesignSystemsLight.png";
-import DesignSystemsDark from "../images/DesignSystemsDark.png";
-import ErgoTimerLight from "../images/ErgoTimerLight.png";
-import ErgoTimerDark from "../images/ErgoTimerDark.png";
-import MediaGalleryLight from "../images/MediaGalleryLight.png";
-import MediaGalleryDark from "../images/MediaGalleryDark.png";
+import DesignSystemsLight from "../images/DesignSystemsLight.webp";
+import DesignSystemsDark from "../images/DesignSystemsDark.webp";
+import ErgoTimerLight from "../images/ErgoTimerLight.webp";
+import ErgoTimerDark from "../images/ErgoTimerDark.webp";
+import MediaGalleryLight from "../images/MediaGalleryLight.webp";
+import MediaGalleryDark from "../images/MediaGalleryDark.webp";
 
 const Projects = ({ darkTheme }) => {
   return (
@@ -23,10 +23,11 @@ const Projects = ({ darkTheme }) => {
         title={"Design Systems"}
         subtitle={"with React & Styled Components"}
         icons={[
-          <AiFillGithub link={"https://github.com/Chrys-Nicolaides"} />,
-          <AiOutlineDribbble />,
-          <AiOutlineCodepen />,
+          <AiFillGithub />,
+          // <AiOutlineDribbble />,
+          // <AiOutlineCodepen />,
         ]}
+        link={"https://github.com/Chrys-Nicolaides/Design-Systems-with-React"}
         buttonText={"View project"}
       />
 
@@ -37,7 +38,8 @@ const Projects = ({ darkTheme }) => {
         number={"03"}
         title={"Ergo Timer"}
         subtitle={"with React & CSS Animation"}
-        icons={[<AiFillGithub />, <AiOutlineDribbble />, <AiOutlineCodepen />]}
+        icons={[<AiFillGithub />]}
+        link={"https://github.com/Chrys-Nicolaides/ErgoTimer"}
         buttonText={"View project"}
       />
       <CardSmall
@@ -47,7 +49,8 @@ const Projects = ({ darkTheme }) => {
         number={"04"}
         title={"Media Gallery"}
         subtitle={"with React & Tailwind CSS"}
-        icons={[<AiFillGithub />, <AiOutlineDribbble />, <AiOutlineCodepen />]}
+        icons={[<AiFillGithub />]}
+        link={"https://github.com/Chrys-Nicolaides/gallery-with-tailwind-v2"}
         buttonText={"View project"}
       />
     </div>

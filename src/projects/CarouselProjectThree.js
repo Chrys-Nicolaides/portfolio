@@ -1,114 +1,108 @@
-import React, { useState } from "react";
-import { IoClose } from "react-icons/io5";
-import Card from "../components/Card";
-import Modal from "../components/Modal";
+import React from "react";
+import { Link } from "react-router-dom";
+
+import { HiArrowLeft } from "react-icons/hi";
 import Carousel from "../components/Carousel";
 import Header from "../components/Header";
 import { ReactComponent as ArchLogo } from "../images/ArchLogo.svg";
 import { ReactComponent as Architects } from "../images/Architects.svg";
 import { ReactComponent as ProjectRole } from "../images/ProjectRole.svg";
-import MashatuCover from "../images/MashatuCover.jpg";
-import MashatuConceptVillaInterior from "../images/MashatuConceptVillaInterior.jpg";
-import MashatuConceptVillaArchitecture from "../images/MashatuConceptVillaArchitecture.jpg";
-import MashatuFinalVillaInterior from "../images/MashatuFinalVillaInterior.jpg";
-import MashatuLodgeArchitecture from "../images/MashatuLodgeArchitecture.jpg";
-import MashatuLodgeArchitecture2 from "../images/MashatuLodgeArchitecture2.jpg";
+import MashatuCover from "../images/MashatuCover.webp";
+import MashatuConceptVillaInterior from "../images/MashatuConceptVillaInterior.webp";
+import MashatuConceptVillaArchitecture from "../images/MashatuConceptVillaArchitecture.webp";
+import MashatuFinalVillaInterior from "../images/MashatuFinalVillaInterior.webp";
+import MashatuLodgeArchitecture from "../images/MashatuLodgeArchitecture.webp";
+import MashatuLodgeArchitecture2 from "../images/MashatuLodgeArchitecture2.webp";
 
-const CarouselProjectThree = ({ setShowModal }) => {
-  const [showDetails, setShowDetails] = useState(false);
+const CarouselProjectThree = () => {
   return (
-    <Modal className="">
-      <Card additionalClasses={"bg-gray-50 py-14 px-24 my-48 relative"}>
-        <div className="carousel-card max-w-lg xl:max-w-3xl mx-auto">
-          <IoClose
-            onClick={() => setShowModal(false)}
-            strokeWidth={6}
-            className="carousel-close-icon"
-          />
-          <Header
-            number={"01"}
-            title={"Mashatu Euphorbia Camp"}
-            subtitle={
-              "New Euphorbia Camp located in Mashatu Game Reserve, Botswana"
-            }
-            tags={[
-              "figma",
-              "ui design",
-              "architecture",
-              "lodge design",
-              "planning",
-              "user experience",
+    <div>
+      <Link
+        className="sm:flex hidden w-40 h-16 items-center pt-24 sm:pb-0.5 pb-4 pl-12 text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200"
+        to="/"
+      >
+        <HiArrowLeft />
+        <h5 className="items-center pl-2.5 text-base">Back</h5>
+      </Link>
+      <div className="carousel-card xl:max-w-5xl mx-auto sm:py-28 sm:px-28 py-16 px-8 bg-gray-50 dark:bg-gray-800 max-w-3xl flex flex-col">
+        <Header
+          number={"01"}
+          title={"Mashatu Euphorbia Camp"}
+          subtitle={
+            "New Euphorbia Camp located in Mashatu Game Reserve, Botswana"
+          }
+          tags={[
+            "figma",
+            "ui design",
+            "architecture",
+            "lodge design",
+            "planning",
+            "user experience",
+          ]}
+        />
+        <div className="pt-10 lg:pt-20">
+          <Carousel
+            images={[
+              MashatuCover,
+              MashatuConceptVillaInterior,
+              MashatuConceptVillaArchitecture,
+              MashatuFinalVillaInterior,
+              MashatuLodgeArchitecture,
+              MashatuLodgeArchitecture2,
             ]}
           />
-          <div className="pt-10 lg:pt-20">
-            <Carousel
-              images={[
-                MashatuCover,
-                MashatuConceptVillaInterior,
-                MashatuConceptVillaArchitecture,
-                MashatuFinalVillaInterior,
-                MashatuLodgeArchitecture,
-                MashatuLodgeArchitecture2,
-              ]}
-            />
-          </div>
-          <div className="flex justify-center pt-12 flex-col">
-            <button
-              onClick={() => setShowDetails(!showDetails)}
-              className="carousel-details-button"
-            >
-              {showDetails ? "Hide details" : "View details"}
-            </button>
-            {showDetails ? (
-              <div className="flex flex-col gap-y-12 justify-center text-gray-500 dark:text-gray-400 w-full pb-2 ml-4">
-                <div className="flex">
-                  <div className="carousel-icon-circle">
-                    <ArchLogo />
-                  </div>
-                  <div>
-                    <h5 className="font-bold">Project</h5>
-                    <h6>
-                      Euphorbia Camp, a beautiful new private lodge located
-                      within the Mashatu Game Reserve, in the Northern Thuli
-                      Game Reserve. The camp and guest villas are nestled within
-                      a forest of Euphorbia trees, along an elevated rock cliff
-                      overlooking the Majale River below. The architecture and
-                      design language throughout was inspired by the surrounding
-                      landscape while being respectful to the environment.
-                    </h6>
-                  </div>
-                </div>
-                <div className="flex">
-                  <div className="carousel-icon-circle">
-                    <Architects />
-                  </div>
-                  <div>
-                    <h5 className="font-bold">Architects</h5>
-                    <h6>Savile Row Tailored Environments</h6>
-                  </div>
-                </div>
-                <div className="flex">
-                  <div className="carousel-icon-circle">
-                    <ProjectRole />
-                  </div>
-                  <div>
-                    <h5 className="font-bold">Role on Project</h5>
-                    <h6 className="">
-                      Concept design, project co-ordination & planning, project
-                      administration, budget planning, cost approval drawings,
-                      architecture team lead, detailed & technical documention,
-                      bi-weekly site inspections & quality control
-                    </h6>
-                  </div>
-                </div>
+        </div>
+        <div className="flex justify-center sm:pt-12 pt-16 flex-col">
+          <h3 className="text-center text-lg text-gray-500 dark:text-gray-400 font-bold sm:pb-8 pb-12">
+            Project details
+          </h3>
+          <div className="flex flex-col gap-y-12 justify-center text-gray-500 dark:text-gray-400 w-full h-auto">
+            <div className="flex">
+              <div className="carousel-icon-circle">
+                <ArchLogo />
               </div>
-            ) : (
-              ""
-            )}
+              <div>
+                <h5 className="font-bold">Project</h5>
+                <h6>
+                  Euphorbia Camp, a beautiful new private lodge located within
+                  the Mashatu Game Reserve, in the Northern Thuli Game Reserve.
+                  The camp and guest villas are nestled within a forest of
+                  Euphorbia trees, along an elevated rock cliff overlooking the
+                  Majale River below. The architecture and design language
+                  throughout was inspired by the surrounding landscape while
+                  being respectful to the environment.
+                </h6>
+              </div>
+            </div>
+            <div className="flex">
+              <div className="carousel-icon-circle">
+                <Architects />
+              </div>
+              <div>
+                <h5 className="font-bold">Architects</h5>
+                <h6>Savile Row Tailored Environments</h6>
+              </div>
+            </div>
+            <div className="flex">
+              <div className="carousel-icon-circle">
+                <ProjectRole />
+              </div>
+              <div>
+                <h5 className="font-bold">Role on Project</h5>
+                <h6 className="sm:pb-8 pb-12">
+                  Project & architectural lead, mentored juniors, translation of
+                  client requirements into technically realised design, client
+                  communication, project co-ordination & planning, project
+                  administration, concept design, budget planning & cost
+                  drawings, detailed & technical documention, interior
+                  detailing, site inspections & quality control
+                </h6>
+              </div>
+            </div>
           </div>
         </div>
-      </Card>
-    </Modal>
+      </div>
+    </div>
   );
 };
 
