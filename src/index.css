@@ -10,7 +10,7 @@
     @apply text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-50 active:text-red-400 dark:active:text-red-200 cursor-pointer md:mx-4 md:my-3 md:text-base xl:text-xl text-xs xl:mx-5 xl:pb-2.5 sm:font-normal font-medium hover:border-red-300 dark:hover:border-red-200 border-b-4 border-transparent;
   }
   .icon-primary {
-    @apply text-gray-500 hover:text-gray-700  dark:text-gray-400 dark:hover:text-gray-100 active:text-red-400 dark:active:text-red-300 sm:pr-4 md:pr-6 transition duration-500 ease-out transform hover:-translate-y-1 md:hover:scale-110 md:scale-75 xl:scale-125 xl:hover:scale-150;
+    @apply text-gray-500 hover:text-gray-700  dark:text-gray-400 dark:hover:text-gray-100 active:text-red-400 dark:active:text-red-300 sm:pr-4 md:pr-6 transition duration-500 ease-out transform hover:-translate-y-1 md:hover:scale-110 md:scale-75 xl:scale-100 xl:hover:scale-125;
   }
   .display-text {
     @apply font-display;
@@ -59,7 +59,7 @@
   }
   div.swiper-button-next,
   div.swiper-button-prev {
-    @apply text-gray-900 hover:scale-125 scale-75 transform px-6 py-7 rounded focus:outline-none outline-none stroke-2;
+    @apply text-gray-900 bg-white bg-opacity-30 focus:bg-opacity-60 hover:scale-100 scale-75 transition transform duration-500 ease-out px-6 py-7 rounded focus:outline-none outline-none stroke-2;
   }
   .swiper-container .swiper-pagination-bullet-active {
     @apply bg-red-300;
@@ -105,5 +105,11 @@
   }
   .cs-body {
     @apply sm:text-gray-500 text-gray-600 font-normal font-body sm:text-lg text-sm sm:w-3/4 w-full dark:text-gray-400 pt-4;
+  }
+}
+
+@layer utilities {
+  .card-max-height {
+    max-height: 700px;
   }
 }

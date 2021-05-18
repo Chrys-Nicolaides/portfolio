@@ -23,15 +23,15 @@ const Header = (props) => {
           </div>
         </div>
         <div className="ml-24">
-          <h3 className="text-gray-700 dark:text-gray-200 text-3xl font-bold pb-3">
+          <h3 className="text-gray-700 dark:text-gray-200 sm:text-3xl text-2xl font-bold sm:pb-3 pb-2">
             {props.title}
           </h3>
-          <h2 className="text-gray-500 dark:text-gray-400 text-lg font-medium tracking-tight">
+          <h2 className="text-gray-500 dark:text-gray-400 sm:text-lg text-base font-medium tracking-tight">
             {props.subtitle}
           </h2>
         </div>
       </div>
-      <div className="flex justify-end w-full items-end pt-16">
+      <div className="flex sm:justify-end justify-start w-full items-end pt-16 sm:flex-nowrap flex-wrap h-auto">
         <ul className="flex items-center gap-2">{multipleTags}</ul>
       </div>
     </div>

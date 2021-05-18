@@ -1,7 +1,6 @@
 import React from "react";
-import Titles from "../components/Titles";
 import { BsPerson } from "react-icons/bs";
-import PortfolioPic from "../images/PortfolioPic.jpg";
+import PortfolioPic from "../images/PortfolioPic.webp";
 
 const Skills = () => {
   return (

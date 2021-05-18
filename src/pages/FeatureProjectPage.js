@@ -1,48 +1,38 @@
-import React, { useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
-// import { Link as ScrollLink } from "react-scroll";
+import React from "react";
+import { Link } from "react-router-dom";
 
 import { HiArrowLeft, HiArrowUp } from "react-icons/hi";
 import { IoOpenOutline } from "react-icons/io5";
-import ProtoPersona from "../images/ProtoPersona.png";
-import WireframesGroup from "../images/WireframesGroup.png";
-import Wireframes from "../images/Wireframes.png";
-import DashboardLight from "../images/DashboardLight.png";
-import DashboardDark from "../images/DashboardDark.png";
-import DashboardEmptyStatesLight from "../images/DashboardEmptyStatesLight.png";
-import DashboardEmptyStatesDark from "../images/DashboardEmptyStatesDark.png";
-import ColorPaletteLight from "../images/ColorPaletteLight.jpg";
-import ColorPaletteDark from "../images/ColorPaletteDark.jpg";
-import ButtonsLight from "../images/ButtonsLight.jpg";
-import ButtonsDark from "../images/ButtonsDark.jpg";
-import TypographyLight from "../images/TypographyLight.jpg";
-import TypographyDark from "../images/TypographyDark.jpg";
-import DesktopWireframeLight from "../images/DesktopWireframeLight.jpg";
-import DesktopWireframeDark from "../images/DesktopWireframeDark.jpg";
-import MobileWireframeLight from "../images/MobileWireframeLight.jpg";
-import MobileWireframeDark from "../images/MobileWireframeDark.jpg";
-import UserFlowLight from "../images/UserFlowLight.jpg";
-import UserFlowDark from "../images/UserFlowDark.jpg";
-import PrototypesLight from "../images/PrototypesLight.jpg";
-import PrototypesDark from "../images/PrototypesDark.jpg";
-import FormLight from "../images/FormLight.jpg";
-import FormDark from "../images/FormDark.jpg";
+import ProtoPersona from "../images/ProtoPersona.webp";
+import WireframesGroup from "../images/WireframesGroup.webp";
+import Wireframes from "../images/Wireframes.webp";
+import DashboardLight from "../images/DashboardLight.webp";
+import DashboardDark from "../images/DashboardDark.webp";
+import DashboardEmptyStatesLight from "../images/DashboardEmptyStatesLight.webp";
+import DashboardEmptyStatesDark from "../images/DashboardEmptyStatesDark.webp";
+import ColorPaletteLight from "../images/ColorPaletteLight.webp";
+import ColorPaletteDark from "../images/ColorPaletteDark.webp";
+import ButtonsLight from "../images/ButtonsLight.webp";
+import ButtonsDark from "../images/ButtonsDark.webp";
+import TypographyLight from "../images/TypographyLight.webp";
+import TypographyDark from "../images/TypographyDark.webp";
+import DesktopWireframeLight from "../images/DesktopWireframeLight.webp";
+import DesktopWireframeDark from "../images/DesktopWireframeDark.webp";
+import MobileWireframeLight from "../images/MobileWireframeLight.webp";
+import MobileWireframeDark from "../images/MobileWireframeDark.webp";
+import UserFlowLight from "../images/UserFlowLight.webp";
+import UserFlowDark from "../images/UserFlowDark.webp";
+import PrototypesLight from "../images/PrototypesLight.webp";
+import PrototypesDark from "../images/PrototypesDark.webp";
+import FormLight from "../images/FormLight.webp";
+import FormDark from "../images/FormDark.webp";
 
 const FeatureProjectPage = ({ darkTheme }) => {
-  function ScrollToTop() {
-    const { pathname } = useLocation();
-
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    }, [pathname]);
-
-    return null;
-  }
   return (
     <div className="sm:-mt-0 -mt-16  overflow-y-hidden">
       <div className="bg-indigo-100 dark:bg-gray-700 dark:bg-opacity-50 w-screen pt-14">
         <Link
-          className="sm:flex hidden items-center pt-6 sm:pb-0.5 pb-4 text-gray-500 dark:text-gray-400 pl-10"
+          className="sm:flex hidden w-40 h-16 items-center  pt-6 sm:pb-0.5 pb-4 text-gray-500 dark:text-gray-400 pl-12 hover:text-gray-800 dark:hover:text-gray-200"
           to="/"
         >
           <HiArrowLeft />
@@ -326,22 +316,35 @@ const FeatureProjectPage = ({ darkTheme }) => {
           <h5 className="text-indigo-400 dark:text-indigo-300 sm:text-lg text-sm font-bold font-display">
             Click below for more info on this project
           </h5>
-          <div className="flex justify-center pt-8 pb-8">
-            <button className="button-primary dark:text-gray-800 focus:dark:text-gray-900 px-3 md:px-6 py-1.5 md:py-2 xl:mr-4 mr-2 text-lg md:text-xl xl:text-2xl xl:px-8 xl:py-3 font-bold cursor-pointer bg-indigo-200 dark:bg-indigo-300 hover:bg-indigo-300 dark:hover:bg-indigo-200 focus:bg-indigo-400 dark:focus:bg-indigo-400 text-indigo-600 focus:text-indigo-900 flex items-center ">
-              Github
-            </button>
-            <button className="button-primary dark:text-gray-800 focus:dark:text-gray-900 px-3 md:px-6 py-1.5 md:py-2 xl:ml-4 ml-2 text-lg md:text-xl xl:text-2xl xl:px-8 xl:py-3 font-bold cursor-pointer bg-indigo-200 dark:bg-indigo-300 hover:bg-indigo-300 dark:hover:bg-indigo-200 focus:bg-indigo-400 dark:focus:bg-indigo-400 text-indigo-600 focus:text-indigo-900 flex items-center ">
-              Website
-            </button>
+          <div className="flex justify-center pt-8 sm:pb-20 pb-20">
+            <a
+              href="https://github.com/Chrys-Nicolaides/finance-management-system"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="button-primary dark:text-gray-800 focus:dark:text-gray-900 px-3 md:px-6 py-1.5 md:py-2 xl:mr-4 mr-2 text-lg md:text-xl xl:text-2xl xl:px-8 xl:py-3 font-bold cursor-pointer bg-indigo-200 dark:bg-indigo-300 hover:bg-indigo-300 dark:hover:bg-indigo-200 focus:bg-indigo-400 dark:focus:bg-indigo-400 text-indigo-600 focus:text-indigo-900 flex items-center ">
+                Github
+              </button>
+            </a>
+            <a
+              href="https://finanzer.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="button-primary dark:text-gray-800 focus:dark:text-gray-900 px-3 md:px-6 py-1.5 md:py-2 xl:ml-4 ml-2 text-lg md:text-xl xl:text-2xl xl:px-8 xl:py-3 font-bold cursor-pointer bg-indigo-200 dark:bg-indigo-300 hover:bg-indigo-300 dark:hover:bg-indigo-200 focus:bg-indigo-400 dark:focus:bg-indigo-400 text-indigo-600 focus:text-indigo-900 flex items-center ">
+                Website
+              </button>
+            </a>
           </div>
           <div>
-            {/* <ScrollToTop /> */}
-            <div className="w-full sm:flex hidden justify-end pr-16 cursor-pointer">
-              <div className="bg-gray-300 text-gray-800 dark:bg-gray-700 dark:text-gray-300 hover:bg-gray-400 hover:bg-opacity-50 dark:hover:bg-gray-600 h-10 w-10 flex justify-center items-center rounded-md shadow">
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className="w-full flex justify-end sm:pr-16 -pr-4 cursor-pointer outline-none focus:outline-none"
+            >
+              <div className="bg-gray-300 text-gray-800 dark:bg-gray-700 dark:text-gray-300 hover:bg-gray-400 hover:bg-opacity-50 dark:hover:bg-gray-600 sm:h-10 h-8 sm:w-10 w-8 flex justify-center items-center rounded-md shadow">
                 <HiArrowUp />
               </div>
-            </div>
-            {/* </ScrollToTop> */}
+            </button>
           </div>
         </div>
       </div>

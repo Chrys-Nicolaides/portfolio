@@ -15,7 +15,7 @@ const ProjectsPage = ({ darkTheme }) => {
           <HiOutlineSparkles className="icon" />
         </div>
 
-        <h2 className="sections-title">Featured freelance project</h2>
+        <h2 className="sections-title">Freelance project</h2>
       </div>
       <FeatureProject darkTheme={darkTheme} />
 
@@ -24,7 +24,7 @@ const ProjectsPage = ({ darkTheme }) => {
           <BiFolder className="icon" />
         </div>
 
-        <h2 className="sections-title">Personal projects</h2>
+        <h2 className="sections-title">Dev projects</h2>
       </div>
       <Projects darkTheme={darkTheme} />
       <div className="icon-container">

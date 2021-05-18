@@ -16,7 +16,7 @@ const LandingPage = () => {
       <h2 className="introduction xl:text-7xl md:text-6xl text-4xl text-red-300 dark:text-300 font-display font-bold xl:pb-4">
         I design to solve problems.
       </h2>
-      <p className="description text-gray-600 dark:text-gray-400 font-body sm:pt-7 pt-10 xl:pb-20 pb-12 xl:text-lg md:text-sm text-sm xl:w-3/4 lg:w-full md:w-full sm:w-3/4">
+      <p className="description text-gray-600 dark:text-gray-400 font-body sm:pt-7 pt-10 xl:pb-20 pb-12 xl:text-lg md:text-sm text-sm xl:w-2/3 lg:w-full md:w-full sm:w-3/4">
         I am a Johannesburg based UX/UI designer with an extensive background in
         architecture. I enjoy the intricacies of design and how it impacts user
         experience on multiple levels. My experience in both architecture &

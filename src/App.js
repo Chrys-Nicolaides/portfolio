@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Element } from "react-scroll";
-import { Route } from "react-router-dom";
-import { Switch } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
+
 import "./App.css";
 import LandingPage from "./pages/LandingPage";
 import Navbar from "./components/Navbar";
@@ -11,6 +11,9 @@ import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
 import ProjectsPage from "./pages/ProjectsPage";
 import FeatureProjectPage from "./pages/FeatureProjectPage";
+import CarouselProjectOne from "./projects/CarouselProjectOne";
+import CarouselProjectTwo from "./projects/CarouselProjectTwo";
+import CarouselProjectThree from "./projects/CarouselProjectThree";
 
 function App() {
   const [darkTheme, setDarkTheme] = useState(
@@ -60,8 +63,17 @@ function App() {
             <Contact />
           </Element>
         </Route>
-        <Route path="/featureprojectpage">
+        <Route path="/finanzer">
           <FeatureProjectPage darkTheme={darkTheme} />
+        </Route>
+        <Route path="/yum">
+          <CarouselProjectOne darkTheme={darkTheme} />
+        </Route>
+        <Route path="/tswalu">
+          <CarouselProjectTwo darkTheme={darkTheme} />
+        </Route>
+        <Route path="/euphorbia">
+          <CarouselProjectThree darkTheme={darkTheme} />
         </Route>
         <Footer />
       </div>

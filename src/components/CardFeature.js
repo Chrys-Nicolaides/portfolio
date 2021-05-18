@@ -14,11 +14,7 @@ const CardFeature = (props) => {
     >
       {/* {showModal ? <CarouselProject setShowModal={setShowModal} /> : ""} */}
       <div className="overflow-hidden bg-gray-50 dark:bg-gray-700 h-1/3 sm:p-10 p-6 sm:pt-10 pt-6">
-        <img
-          src={props.image}
-          alt={props.imageTitle}
-          className="shadow-md rounded-md"
-        />
+        <img src={props.image} alt={props.imageTitle} className="rounded-md" />
       </div>
       <div className="sm:h-36 h-full flex sm:flex-row flex-col w-full ">
         <div className="flex sm:w-2/3 w-full sm:px-0 px-6">
@@ -37,22 +33,22 @@ const CardFeature = (props) => {
           </div>
         </div>
         <div className="flex lg:justify-end lg:pt-0 pt-20 content-center sm:w-1/3 w-full items-end">
-          {props.buttonText && (
+          {/* {props.buttonText && (
             <button
-              className="flex items-center button-primary px-6 sm:mr-8 mr-0 ml-0 sm:w-auto w-full h-14 text-red-950 absolute lg:rounded-md rounded-t-none text-lg uppercase tracking-tight font-semibold"
+              className="flex justify-center items-center button-primary px-5 sm:mr-8 mr-0 ml-0 sm:w-auto w-full h-14 text-red-950 absolute lg:rounded-md rounded-t-none text-lg uppercase tracking-tight font-semibold"
               onClick={() => setShowModal(!showModal)}
             >
               {props.buttonText}
               <HiArrowRight className="ml-8" />
             </button>
-          )}
+          )} */}
           {props.link && (
             <RouterLink
-              className="flex justify-center items-center button-primary px-6 sm:mr-8 mr-0 ml-0 sm:w-1/4 w-full h-14 text-red-950 absolute lg:rounded-md rounded-t-none text-lg uppercase tracking-tight font-semibold"
+              className="flex justify-center items-center button-primary px-5 sm:mr-8 mr-0 ml-0 sm:w-auto w-full h-14 text-red-950 absolute lg:rounded-md rounded-t-none text-lg uppercase tracking-tight font-semibold"
               to={props.link}
             >
               View Case Study
-              <HiArrowRight className="ml-8 sm:flex hidden" />
+              {/* <HiArrowRight className="xl:ml-8 ml-0 xl:flex hidden" /> */}
             </RouterLink>
           )}
         </div>
