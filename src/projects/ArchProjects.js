@@ -4,12 +4,14 @@ import CardLarge from "../components/CardLarge";
 import CarouselProjectOne from "../projects/CarouselProjectOne";
 import CarouselProjectTwo from "../projects/CarouselProjectTwo";
 import CarouselProjectThree from "../projects/CarouselProjectThree";
-import YumDark from "../images/YumDark.png";
-import YumLight from "../images/YumLight.png";
-import TswaluGroup from "../images/TswaluGroup.png";
-import MashatuGroup from "../images/MashatuGroup.png";
+import YumDark from "../images/YumDark.webp";
+import YumLight from "../images/YumLight.webp";
+import TswaluGroup from "../images/TswaluGroup.webp";
+import MashatuGroup from "../images/MashatuGroup.webp";
 
 const ArchProjects = ({ darkTheme }) => {
+  console.log(darkTheme);
+
   return (
     <div>
       <CardLarge
@@ -18,8 +20,8 @@ const ArchProjects = ({ darkTheme }) => {
         number={"01"}
         title={"YUM! Offices"}
         subtitle={"Office fit-out for new KFC headquarters"}
-        buttonText={"View gallery"}
         project={CarouselProjectOne}
+        link={"/yum"}
       />
       <CardLarge
         darkTheme={darkTheme}
@@ -27,8 +29,8 @@ const ArchProjects = ({ darkTheme }) => {
         number={"02"}
         title={"Tswalu"}
         subtitle={"Kalahari game lodge refurbishment"}
-        buttonText={"View gallery"}
         project={CarouselProjectTwo}
+        link={"/tswalu"}
       />
       <CardLarge
         darkTheme={darkTheme}
@@ -36,8 +38,8 @@ const ArchProjects = ({ darkTheme }) => {
         number={"03"}
         title={"Euphorbia Camp"}
         subtitle={"New private game lodge in Botswana"}
-        buttonText={"View gallery"}
         project={CarouselProjectThree}
+        link={"/euphorbia"}
       />
     </div>
   );

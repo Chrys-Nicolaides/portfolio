@@ -10,6 +10,7 @@ module.exports = {
       red: colors.red,
       black: colors.black,
       white: colors.white,
+      indigo: colors.indigo,
     },
     fontFamily: {
       display: [
@@ -42,9 +43,15 @@ module.exports = {
       "10xl": ["13rem", { lineHeight: "1" }],
     },
     extend: {
+      height: {
+        xxl: "37.5rem",
+      },
       colors: {
         red: {
           950: "#551414",
+        },
+        gray: {
+          850: "#222225",
         },
       },
     },
