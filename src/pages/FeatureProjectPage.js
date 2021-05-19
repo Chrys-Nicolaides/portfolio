@@ -43,10 +43,14 @@ const FeatureProjectPage = ({ darkTheme }) => {
             <div className="cs-title-dash"></div>
             <h3 className="cs-title">Finanzer</h3>
           </div>
-          <h2 className="cs-subtitle xl:text-7xl md:text-6xl text-4xl">
+          <h2 className="cs-subtitle 2xl:text-7xl xl:text-5xl md:text-4xl text-3xl">
+            Finanzer is a finance tracking system that empowers users to better
+            monitor their available funds
+          </h2>
+          {/* <h2 className="cs-subtitle xl:text-7xl md:text-6xl text-4xl">
             Finanzer does something to help a certain someone solve a certain
             problem
-          </h2>
+          </h2> */}
           <div className="flex md:flex-row flex-col gap-12 w-11/12 font-body items-start">
             <div className="md:w-1/4 w-full">
               <h3 className="text-gray-600 dark:text-gray-200 font-bold sm:text-2xl text-lg">
