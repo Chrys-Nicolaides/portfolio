@@ -4,7 +4,7 @@ import { HiArrowUp } from "react-icons/hi";
 const Contact = () => {
   return (
     <div className="">
-      <div className=" md:px-44 md:pt-20 md:pb-20 xl:pt-64 xl:pb-40 sm:px-4 pt-32 pb-16">
+      <div className=" md:px-44 md:pt-20 md:pb-20 xl:pt-64 xl:pb-44 sm:px-4 pt-32 pb-16">
         <div className="flex justify-center flex-col w-full h-full sm:px-8 px-0 text-center sm:pb-28 pb-28">
           <h3 className="text-gray-700 dark:text-gray-300 sm:text-4xl text-2xl font-bold font-display pb-12">
             Thank you for looking at my portfolio.
