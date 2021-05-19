@@ -17,25 +17,30 @@ const Skills = () => {
       <div className="flex lg:flex-row flex-col gap-10 lg:w-full">
         <div className="lg:w-1/2 2xl:w-2/3 w-full">
           <p className="cs-body sm:text-base lg:text-lg 2xl:text-xl text-sm w-full pb-4 pt-0">
-            I'm a UX/UI designer with a background in Architecture. I graduated
-            with my Master’s Degree in 2016 and have gained 6 years of
-            experience working in the field.
+            I am a UX/UI designer with an extensive background in architecture,
+            having a Master’s degree and 6 years of experience working in the
+            field.
           </p>
           <p className="cs-body sm:text-base lg:text-lg 2xl:text-xl text-sm w-full pb-4">
             Today, I am eager to transition into web development and focus on
             not only web design but also building impactful and meaningful
-            experiences for users.
+            digital experiences for users. I believe there is a significant
+            overlap between architecture and UX design, as both are
+            people-focused fields striving to create meaningful experiences for
+            users - be it in physical or digital environments. I have a passion
+            for problem-solving, a knack for focusing on the finer details, and
+            I enjoy turning complex problems into intuitive solutions. While I
+            have experience in design, I am a pragmatist and appreciate that
+            UX/UI design and development are reliant on each other. I strive to
+            grow in both areas in hopes of becoming a well-rounded designer.
           </p>
           <p className="cs-body sm:text-base lg:text-lg 2xl:text-xl text-sm w-full pb-4">
-            I believe there is significant overlap between architecture and UX
-            design, as both are people-focused fields striving to create
-            meaningful experiences for users - be it in physical or digital
-            environments. I have a passion for problem-solving, a knack for
-            focusing on the finer details, and I enjoy turning complex problems
-            into intuitive solutions. While I have experience in design, I am a
-            pragmatist and appreciate that UX/UI design and development are
-            reliant on each other. I strive to grow in both areas with the goal
-            of becoming more well rounded when working on anything on the web.
+            My experience in both architecture and interior architecture has
+            given me a broader understanding of creating better human
+            interactions on a macro and micro scale. After self-guided learning
+            and exploration, I have found that many similarities in my strengths
+            and skills as an architect can help shape my success in the field of
+            UX/UI design.
           </p>
         </div>
         <div

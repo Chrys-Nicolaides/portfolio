@@ -168,7 +168,7 @@ const FeatureProjectPage = ({ darkTheme }) => {
             Breaking each responsibility down, I proposed the visual design to
             the client which included a design system, wireframes, mockups,
             prototypes and a component library. These elements were all informed
-            by the research and analysis I did prior, user interviews &
+            by the research and analysis I did prior, user interviews and
             discussions, user journey and empathy maps, and using the heauristic
             evaluation as a usability check.
           </p>
@@ -193,7 +193,7 @@ const FeatureProjectPage = ({ darkTheme }) => {
             project.
           </p>
           <p className="cs-body">
-            From here, I was able to narrow done the specifics the client was
+            From here, I was able to narrow down the specifics the client was
             looking for and understand the preferred layout and relationship of
             those elements to meet his requirements.
           </p>

@@ -90,12 +90,12 @@ const CarouselProjectThree = () => {
               <div>
                 <h5 className="font-bold">Role on Project</h5>
                 <h6 className="sm:pb-8 pb-12">
-                  Project & architectural lead, mentored juniors, translation of
-                  client requirements into technically realised design, client
-                  communication, project co-ordination & planning, project
-                  administration, concept design, budget planning & cost
-                  drawings, detailed & technical documention, interior
-                  detailing, site inspections & quality control
+                  Project and architectural lead, mentored juniors, translation
+                  of client requirements into technically realised design,
+                  client relations, project co-ordination and planning, project
+                  administration, concept design, budget planning and cost
+                  drawings, detailed and technical documention, interior
+                  detailing, site inspections and quality control
                 </h6>
               </div>
             </div>
