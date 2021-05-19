@@ -3,7 +3,7 @@ import { ReactComponent as HandWave } from "../images/HandWave.svg";
 
 const LandingPage = () => {
   return (
-    <div className="md:pt-52 pt-8 md:pb-36 pb-8 sm:mb-0 mb-20">
+    <div className="md:pt-52 pt-10 md:pb-36 pb-8 sm:mb-0 mb-20">
       <div className="flex content-center text-red-600 dark:text-gray-400">
         <HandWave className="sm:h-8 sm:w-8 h-6 w-6 -mt-0.5 fill-current text-red-500" />
         <h3 className="greeting text-gray-500 dark:text-gray-400 font-body font-medium xl:text-lg md:text-sm xl:pb-4 pb-2 sm:text-lg ml-3">
