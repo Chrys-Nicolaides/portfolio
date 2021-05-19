@@ -8,7 +8,7 @@ const CardFeature = (props) => {
   return (
     <Card
       additionalClasses={
-        "relative sm:mb-44 mb-32 sm:mx-0 mx-8 sm:w-2/3 w-auto h-1/3 transition transform duration-500 hover:scale-105 ease-out sm:pb-0 pb-6 "
+        "relative sm:mb-44 mb-32 h-1/3 transition transform duration-500 hover:scale-105 ease-out sm:pb-0 pb-6 "
       }
     >
       {/* {showModal ? <CarouselProject setShowModal={setShowModal} /> : ""} */}

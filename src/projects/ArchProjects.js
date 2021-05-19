@@ -10,8 +10,6 @@ import TswaluGroup from "../images/TswaluGroup.webp";
 import MashatuGroup from "../images/MashatuGroup.webp";
 
 const ArchProjects = ({ darkTheme }) => {
-  console.log(darkTheme);
-
   return (
     <div>
       <CardLarge

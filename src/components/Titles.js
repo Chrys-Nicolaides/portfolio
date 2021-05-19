@@ -6,24 +6,24 @@ import { ReactComponent as DevLogo } from "../images/DevLogo.svg";
 
 const Titles = () => {
   return (
-    <div className="text-gray-300 dark:text-700 flex sm:flex-row flex-col sm:gap-x-24 gap-y-24 sm:w-3/5 w-auto sm:mx-0 mx-8">
+    <div className="text-gray-300 dark:text-700 flex sm:flex-row flex-col gap-y-16 justify-between">
       <CardTitles
-        additionalClasses={"border-red-200"}
+        additionalClasses={"border-red-200 max-w-xs"}
         icon={<ArchLogo />}
         title={"Architect"}
         tags={["archicad", "revit", "photoshop"]}
       />
       <CardTitles
-        additionalClasses={" border-red-300"}
+        additionalClasses={"border-red-300 max-w-xs"}
         icon={<DesignerLogo />}
         title={"Designer"}
         tags={["figma", "illustrator", "indesign"]}
       />
       <CardTitles
-        additionalClasses={" border-red-400"}
+        additionalClasses={"border-red-400 max-w-xs"}
         icon={<DevLogo />}
         title={"Developer"}
-        tags={["javascript", "react", "html", "css"]}
+        tags={["react", "javascript", "css"]}
       />
     </div>
   );

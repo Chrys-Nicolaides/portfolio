@@ -59,13 +59,13 @@
   }
   div.swiper-button-next,
   div.swiper-button-prev {
-    @apply text-gray-900 bg-white bg-opacity-30 focus:bg-opacity-60 hover:scale-100 scale-75 transition transform duration-500 ease-out px-6 py-7 rounded focus:outline-none outline-none stroke-2;
+    @apply text-gray-900 bg-white bg-opacity-60 hover:bg-opacity-90 dark:bg-white dark:bg-opacity-30 dark:hover:bg-opacity-50 sm:hover:scale-100 hover:scale-75 sm:scale-75 scale-50 transition transform duration-500 ease-out sm:px-6 px-4 sm:py-7 py-5 rounded focus:outline-none outline-none stroke-2;
   }
   .swiper-container .swiper-pagination-bullet-active {
     @apply bg-red-300;
   }
   .carousel-icon-circle {
-    @apply bg-gray-200 dark:bg-gray-700 rounded-full h-14 w-14 flex justify-center items-center fill-current content-center mr-5;
+    @apply bg-gray-200 dark:bg-gray-700 rounded-full h-14 w-14 flex justify-center items-center fill-current content-center mr-5 flex-shrink-0;
   }
   .carousel-close-icon {
     @apply absolute top-0 right-0 cursor-pointer stroke-current stroke-2 text-gray-400 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-100 w-8 h-8 self-end mt-6 mr-6;
@@ -80,7 +80,7 @@
     @apply sm:text-xl text-lg font-bold text-gray-600 dark:text-gray-200 font-display mb-4;
   }
   .icon-container {
-    @apply flex items-end sm:pb-24 pb-10 sm:mx-0 mx-8;
+    @apply sm:pb-24 pb-10;
   }
   .icon-circle {
     @apply bg-gray-300 dark:bg-gray-700 bg-opacity-60 rounded-full sm:h-12 sm:w-12 h-7 w-7 flex justify-center items-center;
@@ -89,7 +89,7 @@
     @apply text-gray-400 dark:text-gray-400  sm:h-6 sm:w-6 h-4 w-4;
   }
   .cs-page-breaks {
-    @apply xl:py-36 sm:px-4 sm:py-8 sm:mx-0 mx-8 mb-24;
+    @apply xl:py-36 sm:px-4 sm:py-8 mb-24;
   }
   .cs-page-sections {
     @apply bg-gray-50 dark:bg-gray-800 w-screen sm:py-36 py-10 md:px-44 px-10 sm:px-0;

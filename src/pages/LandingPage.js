@@ -3,7 +3,7 @@ import { ReactComponent as HandWave } from "../images/HandWave.svg";
 
 const LandingPage = () => {
   return (
-    <div className=" md:px-44 md:py-52 sm:px-4 py-8 sm:mx-0 mx-8 mb-20">
+    <div className="md:pt-52 pt-8 md:pb-36 pb-8 sm:mb-0 mb-20">
       <div className="flex content-center text-red-600 dark:text-gray-400">
         <HandWave className="sm:h-8 sm:w-8 h-6 w-6 -mt-0.5 fill-current text-red-500" />
         <h3 className="greeting text-gray-500 dark:text-gray-400 font-body font-medium xl:text-lg md:text-sm xl:pb-4 pb-2 sm:text-lg ml-3">
@@ -16,7 +16,7 @@ const LandingPage = () => {
       <h2 className="introduction xl:text-7xl md:text-6xl text-4xl text-red-300 dark:text-300 font-display font-bold xl:pb-4">
         I design to solve problems.
       </h2>
-      <p className="description text-gray-600 dark:text-gray-400 font-body sm:pt-7 pt-10 xl:pb-20 pb-12 xl:text-lg md:text-sm text-sm xl:w-2/3 lg:w-full md:w-full sm:w-3/4">
+      <p className="description text-gray-600 dark:text-gray-400 font-body sm:pt-7 pt-10 xl:pb-20 pb-12 xl:text-lg md:text-sm text-sm w-full">
         I am a Johannesburg based UX/UI designer with an extensive background in
         architecture. I enjoy the intricacies of design and how it impacts user
         experience on multiple levels. My experience in both architecture &
@@ -25,7 +25,7 @@ const LandingPage = () => {
         to apply in a new UX design role.
       </p>
       <a
-        href="mailto:nicolaides.chrysanthe@gmail.com"
+        href="mailto:ux.chrys@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
       >

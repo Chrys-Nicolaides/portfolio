@@ -52,11 +52,11 @@ const Footer = () => {
       <div>
         <a
           className="link-primary xl:text-base md:text-sm pr-0 text-gray-500 dark:text-gray-400 border-none hover:border-none font-medium "
-          href="mailto:nicolaides.chrysanthe@gmail.com"
+          href="mailto:ux.chrys@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          nicolaides.chrysanthe@gmail.com
+          ux.chrys@gmail.com
         </a>
       </div>
     </footer>
