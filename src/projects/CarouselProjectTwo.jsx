@@ -74,12 +74,13 @@ const CarouselProjectTwo = () => {
               <div>
                 <h5 className="font-bold">Role on Project</h5>
                 <h6 className="sm:pb-8 pb-12">
-                  Architectural co-ordination & planning, construction drawings
-                  & technical documentation, interior detailing. Architectural
-                  co-ordination & planning, construction drawings & technical
-                  documentation, interior detailing.Architectural co-ordination
-                  & planning, construction drawings & technical documentation,
-                  interior detailing.
+                  Architectural co-ordination and planning, construction
+                  drawings and technical documentation, interior detailing.
+                  Architectural co-ordination and planning, construction
+                  drawings and technical documentation, interior
+                  detailing.Architectural co-ordination and planning,
+                  construction drawings and technical documentation, interior
+                  detailing.
                 </h6>
               </div>
             </div>
