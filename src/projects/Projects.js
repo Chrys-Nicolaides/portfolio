@@ -14,12 +14,12 @@ import MediaGalleryDark from "../images/MediaGalleryDark.webp";
 
 const Projects = ({ darkTheme }) => {
   return (
-    <div className="text-gray-300 dark:text-700 flex sm:flex-row flex-col sm:gap-x-8 2xl:gap-x-24 gap-y-0 sm:w-full sm:mx-0 mx-8">
+    <div className="text-gray-300 dark:text-700 flex sm:flex-row flex-col gap-y-16 justify-between">
       <CardSmall
-        tags={["react", "styled components", "ui design"]}
+        tags={["react", "styled components", "ui"]}
         image={darkTheme ? DesignSystemsDark : DesignSystemsLight}
         imageTitle={"Design Systems Cover Image"}
-        number={"02"}
+        number={"01"}
         title={"Design Systems"}
         subtitle={"with React & Styled Components"}
         icons={[
@@ -28,29 +28,32 @@ const Projects = ({ darkTheme }) => {
           // <AiOutlineCodepen />,
         ]}
         link={"https://github.com/Chrys-Nicolaides/Design-Systems-with-React"}
+        url={"https://design-systems-with-react.netlify.app/"}
         buttonText={"View project"}
       />
 
       <CardSmall
-        tags={["react", "css animations", "ui design"]}
+        tags={["react", "css animations", "ui"]}
         image={darkTheme ? ErgoTimerDark : ErgoTimerLight}
         imageTitle={"Ergo Timer Cover Image"}
-        number={"03"}
+        number={"02"}
         title={"Ergo Timer"}
         subtitle={"with React & CSS Animation"}
         icons={[<AiFillGithub />]}
         link={"https://github.com/Chrys-Nicolaides/ErgoTimer"}
+        url={"https://ergotimer.netlify.app"}
         buttonText={"View project"}
       />
       <CardSmall
-        tags={["react", "tailwind css", "ui design"]}
+        tags={["react", "tailwind css", "ui"]}
         image={darkTheme ? MediaGalleryDark : MediaGalleryLight}
         imageTitle={"Media Gallery Cover Image"}
-        number={"04"}
+        number={"03"}
         title={"Media Gallery"}
         subtitle={"with React & Tailwind CSS"}
         icons={[<AiFillGithub />]}
         link={"https://github.com/Chrys-Nicolaides/gallery-with-tailwind-v2"}
+        url={"https://gallery-with-tailwind.netlify.app/"}
         buttonText={"View project"}
       />
     </div>

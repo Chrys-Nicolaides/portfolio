@@ -30,8 +30,6 @@ const Carousel = (props) => {
       lazy={true}
       navigation
       pagination={{ clickable: true }}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
       className="rounded-md "
     >
       {carouselImages}

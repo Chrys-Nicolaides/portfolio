@@ -10,12 +10,10 @@ const CardLarge = (props) => {
 
   const { darkTheme } = props;
 
-  console.log(darkTheme);
-
   return (
     <Card
       additionalClasses={
-        "sm:mb-44 mb-32 sm:mx-0 mx-8 sm:w-2/3 w-auto xxl transition transform duration-500 hover:scale-105 ease-out sm:pb-0 pb-6 card-max-height"
+        "sm:mb-44 mb-16 transition transform duration-500 hover:scale-105 ease-out sm:pb-0 pb-6 card-max-height"
       }
       darkTheme={darkTheme}
     >
@@ -26,7 +24,7 @@ const CardLarge = (props) => {
       )}
       <div className="overflow-hidden bg-gray-100 dark:bg-gray-700 dark:bg-opacity-10">
         <img
-          srcset={`${props.image} 2x`}
+          srcSet={`${props.image} 2x`}
           src={props.image}
           alt={props.imageTitle}
           className="transform -rotate-12 origin-top-right sm:-translate-y-16 translate-y-2 sm:-translate-x-4 -translate-x-2"

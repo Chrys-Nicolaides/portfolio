@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { HiArrowLeft, HiArrowUp } from "react-icons/hi";
-import { IoOpenOutline } from "react-icons/io5";
+// import { IoOpenOutline } from "react-icons/io5";
 import ProtoPersona from "../images/ProtoPersona.webp";
 import WireframesGroup from "../images/WireframesGroup.webp";
 import Wireframes from "../images/Wireframes.webp";
@@ -29,16 +29,16 @@ import FormDark from "../images/FormDark.webp";
 
 const FeatureProjectPage = ({ darkTheme }) => {
   return (
-    <div className="sm:-mt-0 -mt-16  overflow-y-hidden">
+    <div className="sm:-mt-0 -mt-16 overflow-y-hidden">
       <div className="bg-indigo-100 dark:bg-gray-700 dark:bg-opacity-50 w-screen pt-14">
         <Link
-          className="sm:flex hidden w-40 h-16 items-center  pt-6 sm:pb-0.5 pb-4 text-gray-500 dark:text-gray-400 pl-12 hover:text-gray-800 dark:hover:text-gray-200"
+          className="sm:flex hidden w-40 h-16 items-center mt-12 pt-6 sm:pb-0.5 pb-4 text-gray-500 dark:text-gray-400 pl-12 hover:text-gray-800 dark:hover:text-gray-200"
           to="/"
         >
           <HiArrowLeft />
           <h5 className="items-center pl-2.5 text-base">Back</h5>
         </Link>
-        <div className="cs-page-breaks px-2 sm:px-44">
+        <div className="cs-page-breaks px-10 pt-12 sm:px-44">
           <div className="flex items-center">
             <div className="cs-title-dash"></div>
             <h3 className="cs-title">Finanzer</h3>
@@ -47,7 +47,7 @@ const FeatureProjectPage = ({ darkTheme }) => {
             Finanzer does something to help a certain someone solve a certain
             problem
           </h2>
-          <div className="flex md:flex-row flex-col gap-16 w-11/12 font-body items-start">
+          <div className="flex md:flex-row flex-col gap-12 w-11/12 font-body items-start">
             <div className="md:w-1/4 w-full">
               <h3 className="text-gray-600 dark:text-gray-200 font-bold sm:text-2xl text-lg">
                 Client
@@ -75,12 +75,18 @@ const FeatureProjectPage = ({ darkTheme }) => {
                 Javascript, React & Tailwind CSS
               </p>
             </div>
-            <div className="md:w-1/4 w-full flex items-center">
-              <button className="button-primary bg-indigo-200 dark:bg-indigo-200 hover:bg-indigo-300 dark:hover:bg-indigo-100 focus:bg-indigo-400 dark:focus:bg-indigo-300 text-lg md:text-xl xl:text-2xl px-8 py-4 text-indigo-600 focus:text-indigo-900 flex items-center">
-                View Project
-                <IoOpenOutline className="ml-2.5 stroke-4 h-6 w-6" />
-              </button>
-            </div>
+            <a
+              href="https://www.figma.com/file/DLREeR30lWMRFPJHd6bsrZ/Finanzer-Case-Study?node-id=0%3A1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="flex items-center">
+                <button className="button-primary bg-indigo-200 dark:bg-indigo-200 hover:bg-indigo-300 dark:hover:bg-indigo-100 focus:bg-indigo-400 dark:focus:bg-indigo-300 text-lg md:text-xl xl:text-2xl px-8 py-4 text-indigo-600 focus:text-indigo-900 flex items-center">
+                  View in Figma
+                  {/* <IoOpenOutline className="ml-2.5 stroke-4 h-6 w-6" /> */}
+                </button>
+              </div>
+            </a>
           </div>
         </div>
         <div className="cs-page-sections pt-0">
@@ -119,12 +125,10 @@ const FeatureProjectPage = ({ darkTheme }) => {
             <h3 className="cs-title">User</h3>
           </div>
           <p className="cs-body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. At diam
-            facilisis etiam non tincidunt eleifend et viverra. Integer
-            suspendisse duis viverra pretium tellus. Netus felis vitae nibh
-            habitasse etiam risus feugiat ut. Nisl ullamcorper turpis arcu arcu
-            sit pellentesque consectetur mattis. Ipsum tincidunt nec ornare et
-            integer. At arcu semper sit magnis ut.
+            While this project was built for a specific client, Finanzer is
+            targetted towards similar young professionals hoping to get a better
+            grasp on their finances and be able to keep track of their current
+            status on their mobile phones while on the go.
           </p>
         </div>
         <div className="cs-page-sections pt-10">
@@ -298,15 +302,17 @@ const FeatureProjectPage = ({ darkTheme }) => {
               className="rounded-md shadow-md place-self-center"
             />
           </div>
-          <h3 className="cs-title text-gray-500 dark:text-gray-500 sm:text-base text-sm">
-            Transaction form
-          </h3>
-          <div className="flex justify-center sm:w-3/4 w-full object-center pt-4 pb-16">
-            <img
-              src={darkTheme ? FormDark : FormLight}
-              alt="transaction form"
-              className=""
-            />
+          <div>
+            <h3 className="cs-title text-gray-500 dark:text-gray-500 sm:text-base text-sm">
+              Transaction form
+            </h3>
+            <div className="flex justify-center sm:w-3/4 w-full object-center pt-4 pb-16">
+              <img
+                src={darkTheme ? FormDark : FormLight}
+                alt="transaction form"
+                className="w-"
+              />
+            </div>
           </div>
         </div>
         <div className="flex justify-center flex-col w-full h-full pb-24 pt-36 px-8 sm:px-0 text-center dark:bg-gray-900 dark:bg-opacity-80">
@@ -322,17 +328,17 @@ const FeatureProjectPage = ({ darkTheme }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="button-primary dark:text-gray-800 focus:dark:text-gray-900 px-3 md:px-6 py-1.5 md:py-2 xl:mr-4 mr-2 text-lg md:text-xl xl:text-2xl xl:px-8 xl:py-3 font-bold cursor-pointer bg-indigo-200 dark:bg-indigo-300 hover:bg-indigo-300 dark:hover:bg-indigo-200 focus:bg-indigo-400 dark:focus:bg-indigo-400 text-indigo-600 focus:text-indigo-900 flex items-center ">
+              <button className="button-primary px-3 md:px-6 py-1.5 md:py-2 xl:mr-4 mr-2 text-lg md:text-xl xl:text-2xl xl:px-8 xl:py-3 font-bold cursor-pointer bg-indigo-200 dark:bg-indigo-300 hover:bg-indigo-300 dark:hover:bg-indigo-200 focus:bg-indigo-400 dark:focus:bg-indigo-400 text-indigo-600 focus:text-indigo-900 flex items-center ">
                 Github
               </button>
             </a>
             <a
-              href="https://finanzer.netlify.app/"
+              href="https://www.figma.com/file/DLREeR30lWMRFPJHd6bsrZ/Finanzer-Case-Study?node-id=0%3A1"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="button-primary dark:text-gray-800 focus:dark:text-gray-900 px-3 md:px-6 py-1.5 md:py-2 xl:ml-4 ml-2 text-lg md:text-xl xl:text-2xl xl:px-8 xl:py-3 font-bold cursor-pointer bg-indigo-200 dark:bg-indigo-300 hover:bg-indigo-300 dark:hover:bg-indigo-200 focus:bg-indigo-400 dark:focus:bg-indigo-400 text-indigo-600 focus:text-indigo-900 flex items-center ">
-                Website
+              <button className="button-primary px-3 md:px-6 py-1.5 md:py-2 xl:ml-4 ml-2 text-lg md:text-xl xl:text-2xl xl:px-8 xl:py-3 font-bold cursor-pointer bg-indigo-200 dark:bg-indigo-300 hover:bg-indigo-300 dark:hover:bg-indigo-200 focus:bg-indigo-400 dark:focus:bg-indigo-400 text-indigo-600 focus:text-indigo-900 flex items-center ">
+                Figma
               </button>
             </a>
           </div>

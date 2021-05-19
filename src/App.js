@@ -41,27 +41,29 @@ function App() {
   };
 
   return (
-    <Switch>
-      <div className="App bg-gradient-to-b from-gray-100 to-gray-200 dark:bg-gradient-to-b dark:from-gray-800 dark:to-gray-900 h-full w-full">
-        {/* <div className="App bg-gray-200 dark:bg-gray-800 h-full w-full"> */}
-        <Navbar themeToggle={themeToggle} darkTheme={darkTheme} />
-        <div style={{ height: "50px" }} />
+    <div className="App bg-gradient-to-b from-gray-100 to-gray-200 dark:bg-gradient-to-b dark:from-gray-800 dark:to-gray-900 h-full w-full relative">
+      {/* <div className="App bg-gray-200 dark:bg-gray-800 h-full w-full"> */}
+      <Navbar themeToggle={themeToggle} darkTheme={darkTheme} />
+      <div className="hidden sm:visible" style={{ height: "50px" }} />
+      <Switch>
         <Route exact path="/">
-          <Element name="LandingPage">
-            <LandingPage />
-          </Element>
-          <Element name="Skills">
-            <Skills />
-          </Element>
-          <Element name="Projects">
-            <ProjectsPage setDarkTheme={setDarkTheme} darkTheme={darkTheme} />
-          </Element>
-          <Element name="About">
-            <About />
-          </Element>
-          <Element name="Contact">
-            <Contact />
-          </Element>
+          <div className="pt-6 sm:pt-0 px-8 sm:px-16 md:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl xl:px-16 mx-auto">
+            <Element name="LandingPage">
+              <LandingPage />
+            </Element>
+            <Element name="Skills">
+              <Skills />
+            </Element>
+            <Element name="Projects">
+              <ProjectsPage setDarkTheme={setDarkTheme} darkTheme={darkTheme} />
+            </Element>
+            <Element name="About">
+              <About />
+            </Element>
+            <Element name="Contact">
+              <Contact />
+            </Element>
+          </div>
         </Route>
         <Route path="/finanzer">
           <FeatureProjectPage darkTheme={darkTheme} />
@@ -75,9 +77,9 @@ function App() {
         <Route path="/euphorbia">
           <CarouselProjectThree darkTheme={darkTheme} />
         </Route>
-        <Footer />
-      </div>
-    </Switch>
+      </Switch>
+      <Footer />
+    </div>
   );
 }
 

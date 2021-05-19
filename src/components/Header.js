@@ -32,7 +32,7 @@ const Header = (props) => {
         </div>
       </div>
       <div className="flex sm:justify-end justify-start w-full items-end pt-16 sm:flex-nowrap flex-wrap h-auto">
-        <ul className="flex items-center gap-2">{multipleTags}</ul>
+        <ul className="flex items-center gap-2 flex-wrap">{multipleTags}</ul>
       </div>
     </div>
   );
