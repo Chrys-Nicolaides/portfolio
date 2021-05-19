@@ -9,7 +9,7 @@ import ArchProjects from "../projects/ArchProjects";
 
 const ProjectsPage = ({ darkTheme }) => {
   return (
-    <div className="sm:mt-0 mt-20 md:pt-20 md:pb-20 xl:pt-56 xl:pb-10 sm:pt-10 sm:pb-24 pb-2 font-display">
+    <div className="sm:mt-0 mt-20 md:pt-20 md:pb-20 xl:pt-36 xl:pb-10 sm:pt-10 sm:pb-24 pb-2 font-display">
       <div className="icon-container flex items-end ">
         <div className="icon-circle">
           <HiOutlineSparkles className="icon" />

@@ -5,7 +5,7 @@ import PortfolioPic from "../images/PortfolioPic.webp";
 const Skills = () => {
   return (
     <div className="md:py-20 xl:py-10 sm:py-8 ">
-      <div className="flex items-end sm:pb-24 pb-10">
+      <div className="flex items-end sm:pb-24 pb-10 sm:pt-24 pt-0">
         <div className="bg-gray-300 dark:bg-gray-700 bg-opacity-60 rounded-full sm:h-12 sm:w-12 h-7 w-7 flex justify-center items-center">
           <BsPerson className="text-gray-400 dark:text-gray-400 sm:h-6 sm:w-6 h-4 w-4" />
         </div>
