@@ -19,9 +19,9 @@ const LandingPage = () => {
       <p className="description text-gray-600 dark:text-gray-400 font-body sm:pt-7 pt-10 xl:pb-20 pb-12 xl:text-lg md:text-sm text-sm w-full">
         I am a Johannesburg based UX/UI designer with an extensive background in
         architecture. I enjoy the intricacies of design and how it impacts user
-        experience on multiple levels. My experience in both architecture &
-        interior architecture have given me a better understanding of creating
-        better user experiences on a macro and micro scale, which I am excited
+        experience on multiple levels. My experience in both architecture and
+        interior architecture have given me a broader understanding of creating
+        better human interactions on a macro and micro scale, which I am excited
         to apply in a new UX design role.
       </p>
       <a

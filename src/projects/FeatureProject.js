@@ -1,9 +1,8 @@
 import React from "react";
-// import { Link, useHistory } from "react-router-dom";
 
 import CardFeature from "../components/CardFeature";
-import DashboardLight from "../images/DashboardLight.webp";
-import DashboardDark from "../images/DashboardDark.webp";
+import DashboardLight from "../images/DashboardLight.jpg";
+import DashboardDark from "../images/DashboardDark.jpg";
 
 const FeatureProject = ({ darkTheme }) => {
   return (

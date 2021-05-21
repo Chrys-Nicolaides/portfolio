@@ -3,17 +3,18 @@ import Card from "../components/Card";
 import { Link as RouterLink } from "react-router-dom";
 
 const CardFeature = (props) => {
-  // const [showModal, setShowModal] = useState(false);
-
   return (
     <Card
       additionalClasses={
         "relative sm:mb-44 mb-32 h-1/3 transition transform duration-500 hover:scale-105 ease-out sm:pb-0 pb-6 "
       }
     >
-      {/* {showModal ? <CarouselProject setShowModal={setShowModal} /> : ""} */}
       <div className="overflow-hidden bg-gray-50 dark:bg-gray-700 h-1/3 sm:p-10 p-6 sm:pt-10 pt-6">
-        <img src={props.image} alt={props.imageTitle} className="rounded-md" />
+        <img
+          src={props.image}
+          alt={props.imageTitle}
+          className="sm:rounded-2xl rounded-md"
+        />
       </div>
       <div className="sm:h-36 h-full flex sm:flex-row flex-col w-full ">
         <div className="flex sm:w-2/3 w-full sm:px-0 px-6">
@@ -32,22 +33,12 @@ const CardFeature = (props) => {
           </div>
         </div>
         <div className="flex lg:justify-end lg:pt-0 pt-20 content-center sm:w-1/3 w-full items-end">
-          {/* {props.buttonText && (
-            <button
-              className="flex justify-center items-center button-primary px-5 sm:mr-8 mr-0 ml-0 sm:w-auto w-full h-14 text-red-950 absolute lg:rounded-md rounded-t-none text-lg uppercase tracking-tight font-semibold"
-              onClick={() => setShowModal(!showModal)}
-            >
-              {props.buttonText}
-              <HiArrowRight className="ml-8" />
-            </button>
-          )} */}
           {props.link && (
             <RouterLink
               className="flex justify-center items-center button-primary px-5 sm:mr-8 mr-0 ml-0 sm:w-auto w-full h-14 text-red-950 absolute lg:rounded-md rounded-t-none text-lg uppercase tracking-tight font-semibold"
               to={props.link}
             >
               View Case Study
-              {/* <HiArrowRight className="xl:ml-8 ml-0 xl:flex hidden" /> */}
             </RouterLink>
           )}
         </div>

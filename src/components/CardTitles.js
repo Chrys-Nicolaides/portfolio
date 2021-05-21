@@ -12,7 +12,7 @@ const CardTitles = (props) => {
   const multipleTags = tags?.map((tag, key) => (
     <li
       key={key}
-      className="text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-gray-700 px-4 py-1.5 pb-2.5 rounded-full font-medium text-sm mb-2 sm:mb-0"
+      className="text-gray-500 dark:text-gray-300 bg-gray-200 dark:bg-gray-700 px-4 py-1.5 pb-2.5 rounded-full font-medium text-sm mb-2 sm:mb-0"
     >
       {tag}
     </li>

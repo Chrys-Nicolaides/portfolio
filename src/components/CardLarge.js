@@ -24,7 +24,7 @@ const CardLarge = (props) => {
       )}
       <div className="overflow-hidden bg-gray-100 dark:bg-gray-700 dark:bg-opacity-10">
         <img
-          srcSet={`${props.image} 2x`}
+          // srcSet={`${props.image} 2x`}
           src={props.image}
           alt={props.imageTitle}
           className="transform -rotate-12 origin-top-right sm:-translate-y-16 translate-y-2 sm:-translate-x-4 -translate-x-2"
@@ -45,15 +45,6 @@ const CardLarge = (props) => {
           </h2>
         </div>
         <div className="flex lg:justify-end sm:pt-0 pt-20 content-center w-full items-end">
-          {/* {props.buttonText && (
-            <button
-              className="flex justify-center items-center button-primary px-5 sm:mr-8 mr-0 ml-0 lg:w-auto w-full h-14 text-red-950 absolute lg:rounded-md rounded-t-none text-lg uppercase tracking-tight font-semibold"
-              onClick={() => setShowModal(!showModal)}
-            >
-              {props.buttonText}
-              <HiArrowRight className="ml-8  sm:flex hidden" />
-            </button>
-          )} */}
           {props.link && (
             <RouterLink
               className="flex justify-center items-center button-primary px-5 sm:mr-8 mr-0 ml-0 lg:w-auto w-full h-14 text-red-950 absolute lg:rounded-md rounded-t-none text-lg uppercase tracking-tight font-semibold"

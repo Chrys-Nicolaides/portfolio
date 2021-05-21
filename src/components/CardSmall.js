@@ -24,11 +24,11 @@ const CardSmall = (props) => {
   ));
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-md shadow-md p-8 relative sm:mb-44 mb-2 transition transform duration-500 hover:scale-105 ease-out">
+    <div className="bg-white dark:bg-gray-800 rounded-md shadow-md p-10 relative sm:mb-44 mb-2 transition transform duration-500 hover:scale-105 ease-out">
       <ul className="flex flex-wrap sm:flex-nowrap sm:visible invisible">
         {multipleTags}
       </ul>
-      <div className="overflow-hidden h-48 sm:h-40 absolute left-0 right-0 sm:top-auto top-0 sm:p-10 p-6 bg-white dark:bg-gray-800">
+      <div className="overflow-hidden h-48 sm:h-40 absolute left-0 right-0 sm:top-auto top-0 sm:p-6 p-6 bg-white dark:bg-gray-800">
         <img
           src={props.image}
           alt={props.imageTitle}
@@ -42,7 +42,7 @@ const CardSmall = (props) => {
           {props.number}
         </div>
       </div>
-      <h3 className="text-gray-700 dark:text-gray-200 2xl:text-3xl text-xl font-bold pb-3 sm:mt-64 mt-32">
+      <h3 className="text-gray-700 dark:text-gray-200 2xl:text-3xl text-xl font-bold pb-3 sm:mt-60 mt-28">
         {props.title}
       </h3>
       <h2 className="text-gray-500 dark:text-gray-400 text-base font-medium tracking-tight">

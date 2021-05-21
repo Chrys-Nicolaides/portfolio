@@ -3,29 +3,29 @@ import { Link } from "react-router-dom";
 
 import { HiArrowLeft, HiArrowUp } from "react-icons/hi";
 // import { IoOpenOutline } from "react-icons/io5";
-import ProtoPersona from "../images/ProtoPersona.webp";
+import { ReactComponent as ProtoPersonaSVG } from "../images/ProtoPersonaSVG.svg";
 import WireframesGroup from "../images/WireframesGroup.webp";
 import Wireframes from "../images/Wireframes.webp";
-import DashboardLight from "../images/DashboardLight.webp";
-import DashboardDark from "../images/DashboardDark.webp";
-import DashboardEmptyStatesLight from "../images/DashboardEmptyStatesLight.webp";
-import DashboardEmptyStatesDark from "../images/DashboardEmptyStatesDark.webp";
-import ColorPaletteLight from "../images/ColorPaletteLight.webp";
-import ColorPaletteDark from "../images/ColorPaletteDark.webp";
-import ButtonsLight from "../images/ButtonsLight.webp";
-import ButtonsDark from "../images/ButtonsDark.webp";
-import TypographyLight from "../images/TypographyLight.webp";
-import TypographyDark from "../images/TypographyDark.webp";
-import DesktopWireframeLight from "../images/DesktopWireframeLight.webp";
-import DesktopWireframeDark from "../images/DesktopWireframeDark.webp";
-import MobileWireframeLight from "../images/MobileWireframeLight.webp";
-import MobileWireframeDark from "../images/MobileWireframeDark.webp";
-import UserFlowLight from "../images/UserFlowLight.webp";
-import UserFlowDark from "../images/UserFlowDark.webp";
-import PrototypesLight from "../images/PrototypesLight.webp";
-import PrototypesDark from "../images/PrototypesDark.webp";
-import FormLight from "../images/FormLight.webp";
-import FormDark from "../images/FormDark.webp";
+import DashboardLight from "../images/DashboardLight.jpg";
+import DashboardDark from "../images/DashboardDark.jpg";
+import DashboardEmptyStatesLight from "../images/DashboardEmptyStatesLight.jpg";
+import DashboardEmptyStatesDark from "../images/DashboardEmptyStatesDark.jpg";
+import { ReactComponent as ColorPaletteLightSVG } from "../images/ColorPaletteLightSVG.svg";
+import { ReactComponent as ColorPaletteDarkSVG } from "../images/ColorPaletteDarkSVG.svg";
+import { ReactComponent as ButtonsLightSVG } from "../images/ButtonsLightSVG.svg";
+import { ReactComponent as ButtonsDarkSVG } from "../images/ButtonsDarkSVG.svg";
+import { ReactComponent as TypographyLightSVG } from "../images/TypographyLightSVG.svg";
+import { ReactComponent as TypographyDarkSVG } from "../images/TypographyDarkSVG.svg";
+import DesktopWireframeLight from "../images/DesktopWireframeLight.jpg";
+import DesktopWireframeDark from "../images/DesktopWireframeDark.jpg";
+import MobileWireframeLight from "../images/MobileWireframeLight.jpg";
+import MobileWireframeDark from "../images/MobileWireframeDark.jpg";
+import UserFlowLight from "../images/UserFlowLight.jpg";
+import UserFlowDark from "../images/UserFlowDark.jpg";
+import PrototypesLight from "../images/PrototypesLight.jpg";
+import PrototypesDark from "../images/PrototypesDark.jpg";
+import FormLight from "../images/FormLight.jpg";
+import FormDark from "../images/FormDark.jpg";
 
 const FeatureProjectPage = ({ darkTheme }) => {
   return (
@@ -47,10 +47,7 @@ const FeatureProjectPage = ({ darkTheme }) => {
             Finanzer is a finance tracking system that empowers users to better
             monitor their available funds
           </h2>
-          {/* <h2 className="cs-subtitle xl:text-7xl md:text-6xl text-4xl">
-            Finanzer does something to help a certain someone solve a certain
-            problem
-          </h2> */}
+
           <div className="flex md:flex-row flex-col gap-12 w-11/12 font-body items-start">
             <div className="md:w-1/4 w-full">
               <h3 className="text-gray-600 dark:text-gray-200 font-bold sm:text-2xl text-lg">
@@ -95,11 +92,13 @@ const FeatureProjectPage = ({ darkTheme }) => {
         </div>
         <div className="cs-page-sections pt-0">
           <div className="flex justify-center sm:w-3/4 w-full object-center">
-            <img
-              src={darkTheme ? DashboardDark : DashboardLight}
-              alt="cover"
-              className="rounded-md shadow-md sm:-mt-32 -mt-8 place-self-center bg-indigo-400 dark:bg-gray-700 sm:p-10 p-4"
-            />
+            <div className=" sm:-mt-32 -mt-8 place-self-center bg-indigo-400 dark:bg-gray-700 sm:p-10 p-4 sm:rounded-2xl rounded-md">
+              <img
+                src={darkTheme ? DashboardDark : DashboardLight}
+                alt="cover"
+                className="sm:rounded-2xl rounded-md"
+              />
+            </div>
           </div>
         </div>
         <div className="cs-page-sections bg-indigo-100 dark:bg-gray-700 dark:bg-opacity-50">
@@ -132,16 +131,12 @@ const FeatureProjectPage = ({ darkTheme }) => {
             While this project was built for a specific client, Finanzer is
             targetted towards similar young professionals hoping to get a better
             grasp on their finances and be able to keep track of their current
-            status on their mobile phones while on the go.
+            financial status abnd available funds at any time of the month.
           </p>
         </div>
         <div className="cs-page-sections pt-10">
           <div className="flex justify-center sm:w-3/4 w-full object-center">
-            <img
-              src={ProtoPersona}
-              alt="proto persona"
-              className="place-self-center"
-            />
+            <ProtoPersonaSVG className="py-0 my-0" />
           </div>
           <div className="flex items-center sm:pt-32 sm:pb-8 pt-16 pb-6">
             <div className="cs-title-dash"></div>
@@ -169,7 +164,7 @@ const FeatureProjectPage = ({ darkTheme }) => {
             the client which included a design system, wireframes, mockups,
             prototypes and a component library. These elements were all informed
             by the research and analysis I did prior, user interviews and
-            discussions, user journey and empathy maps, and using the heauristic
+            discussions, user journey and empathy maps, and using the Heuristic
             evaluation as a usability check.
           </p>
         </div>
@@ -213,9 +208,8 @@ const FeatureProjectPage = ({ darkTheme }) => {
           <p className="cs-body">
             The final elements were chosen based on several user interviews,
             understanding and prioritising their true objectives when using the
-            app, and laying everything out in a way that made sense logically in
-            terms of hierarchy of what information is communicated to the user
-            first.
+            app, and laying everything out in a way that made sense in terms of
+            hierarchy of what information is communicated to the user first.
           </p>
         </div>
         <div className="cs-page-sections bg-white dark:bg-gray-850 w-screen sm:py-36 py-16">
@@ -230,7 +224,7 @@ const FeatureProjectPage = ({ darkTheme }) => {
             <img
               src={darkTheme ? DesktopWireframeDark : DesktopWireframeLight}
               alt="desktop wireframe"
-              className="rounded-md shadow-md"
+              className="rounded-md"
             />
           </div>
           <h3 className="cs-title text-gray-500 dark:text-gray-500 sm:text-base text-sm">
@@ -240,7 +234,7 @@ const FeatureProjectPage = ({ darkTheme }) => {
             <img
               src={darkTheme ? MobileWireframeDark : MobileWireframeLight}
               alt="mobile homepage wireframe"
-              className="rounded-md shadow-md"
+              className="rounded-md"
             />
           </div>
         </div>
@@ -250,25 +244,13 @@ const FeatureProjectPage = ({ darkTheme }) => {
             <h3 className="cs-title">Design System</h3>
           </div>
           <div className="flex justify-center sm:w-3/4 w-full object-center py-8">
-            <img
-              src={darkTheme ? ColorPaletteDark : ColorPaletteLight}
-              alt="color palette"
-              className="place-self-center rounded-md shadow-md"
-            />
+            {darkTheme ? <ColorPaletteDarkSVG /> : <ColorPaletteLightSVG />}
           </div>
           <div className="flex justify-center sm:w-3/4 w-full object-center py-8">
-            <img
-              src={darkTheme ? ButtonsDark : ButtonsLight}
-              alt="buttons"
-              className="place-self-center rounded-md shadow-md"
-            />
+            {darkTheme ? <ButtonsDarkSVG /> : <ButtonsLightSVG />}
           </div>
           <div className="flex justify-center sm:w-3/4 w-full object-center py-8">
-            <img
-              src={darkTheme ? TypographyDark : TypographyLight}
-              alt="typography"
-              className="place-self-center rounded-md shadow-md"
-            />
+            {darkTheme ? <TypographyDarkSVG /> : <TypographyLightSVG />}
           </div>
         </div>
         <div className="cs-page-sections sm:py-36 py-16">
@@ -281,7 +263,7 @@ const FeatureProjectPage = ({ darkTheme }) => {
             <img
               src={darkTheme ? DashboardDark : DashboardLight}
               alt="dashboard mockup"
-              className="rounded-md shadow-md place-self-center"
+              className="sm:rounded-2xl rounded-md"
             />
           </div>
           <h3 className="cs-title text-gray-500 dark:text-gray-500 sm:text-base text-sm">
@@ -293,7 +275,7 @@ const FeatureProjectPage = ({ darkTheme }) => {
                 darkTheme ? DashboardEmptyStatesDark : DashboardEmptyStatesLight
               }
               alt="dashboard empty states mockup"
-              className="rounded-md shadow-md place-self-center"
+              className="sm:rounded-2xl rounded-md"
             />
           </div>
           <h3 className="cs-title text-gray-500 dark:text-gray-500 sm:text-base text-sm">
@@ -303,7 +285,7 @@ const FeatureProjectPage = ({ darkTheme }) => {
             <img
               src={darkTheme ? PrototypesDark : PrototypesLight}
               alt="mobile prototype"
-              className="rounded-md shadow-md place-self-center"
+              className="rounded-xl"
             />
           </div>
           <div>
@@ -314,7 +296,7 @@ const FeatureProjectPage = ({ darkTheme }) => {
               <img
                 src={darkTheme ? FormDark : FormLight}
                 alt="transaction form"
-                className="w-"
+                className="rounded-xl"
               />
             </div>
           </div>
