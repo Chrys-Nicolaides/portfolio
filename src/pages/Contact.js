@@ -23,7 +23,7 @@ const Contact = () => {
               </button>
             </a>
             <a
-              href="www.linkedin.com/in/chrysanthe-nicolaides"
+              href="https://www.linkedin.com/in/chrysanthe-nicolaides/"
               target="_blank"
               rel="noopener noreferrer"
             >

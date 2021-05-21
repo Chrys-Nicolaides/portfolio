@@ -22,7 +22,7 @@ const Footer = () => {
 
         <div className="icon-primary">
           <a
-            href="www.linkedin.com/in/chrysanthe-nicolaides"
+            href="https://www.linkedin.com/in/chrysanthe-nicolaides/"
             target="_blank"
             rel="noopener noreferrer"
           >
