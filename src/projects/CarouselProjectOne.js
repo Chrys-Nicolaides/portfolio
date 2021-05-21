@@ -101,7 +101,7 @@ const CarouselProjectOne = ({ darkTheme }) => {
                 <h5 className="font-bold">Role on Project</h5>
                 <h6 className="sm:pb-8 pb-12">
                   Architectural lead, architectural co-ordination, construction
-                  drawings & technical documentation, interior detailing,
+                  drawings and technical documentation, interior detailing,
                   project drawing review to ensure standards were maintained for
                   outgoing work.
                 </h6>
